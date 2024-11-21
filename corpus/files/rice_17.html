@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"be757ebc50",applicationID:"1737010280"};;/*! For license information please see nr-loader-rum-1.263.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={2983:(e,t,r)=>{"use strict";r.d(t,{D0:()=>m,gD:()=>y,Vp:()=>s,fr:()=>S,jD:()=>j,hR:()=>x,xN:()=>b,x1:()=>c,aN:()=>R,V:()=>I});var n=r(384),i=r(7864);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}var u=r(993);const l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(2614),f=r(944);const g="[data-nr-mask]",p=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:u.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0}},h={},v="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(v);if(!h[e])throw new Error("Configuration for ".concat(e," was never set"));return h[e]}function b(e,t){if(!e)throw new Error(v);h[e]=(0,i.a)(t,p());const r=(0,n.nY)(e);r&&(r.init=h[e])}function y(e,t){if(!e)throw new Error(v);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const w={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function R(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.a)(t,w);const r=(0,n.nY)(e);r&&(r.loader_config=A[e])}const x=(0,n.dV)().o;var E=r(6154),_=r(9324);const N={buildEnv:_.F3,distMethod:_.Xs,version:_.xv,originTime:E.WN},T={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,origin:""+E.gm.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,harvestCount:0,timeKeeper:void 0},k={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!k[e])throw new Error("Runtime for ".concat(e," was never set"));return k[e]}function I(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");k[e]={...(0,i.a)(t,T),...N};const r=(0,n.nY)(e);r&&(r.runtime=k[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},7864:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,xv:()=>n});const n="1.263.0",i="PROD",o="CDN"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,Vr:()=>d,WN:()=>f,bv:()=>o,gm:()=>a,lT:()=>l,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,l=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(i&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,f=Date.now()-(0,n.t)()},4777:(e,t,r)=>{"use strict";r.d(t,{J:()=>o});var n=r(944);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.R)(8);this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.R)(9,e)}}}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>d,x3:()=>u});var n=r(7836),i=r(1478),o=r(3606),a=r(860);const s={};function c(e,t){const r={staged:!1,priority:a.P[t]||0};l(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),g(e,t,!1),s[e].size&&f(e))}function l(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(l(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];const a=e?n.ee.get(e):n.ee,s=o.i.handlers;if(!a.aborted&&a.backlog&&s){if(r){const e=a.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);(0,i.$)(r,(function(e,t){(0,i.$)(t,(function(t,r){r[0].on(e,r[1])}))}))}}a.isolatedBacklog||delete s[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.$)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(2983),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},l={},d=!1;try{d=16===r.length&&(0,o.fr)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),l=c.length,d=0;d<l;d++)c[d].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:d?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:d};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return l[t]=l[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),l=(0,n.Zm)();l.ee||(l.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";r.d(t,{DD:()=>c,jT:()=>a,sp:()=>s});var n=r(6154);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n.gm.addEventListener("test",null,e),n.gm.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e){var t=this;let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:500,n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};const i=n?.leading||!1;let o;return function(){for(var n=arguments.length,a=new Array(n),s=0;s<n;s++)a[s]=arguments[s];i&&void 0===o&&(e.apply(t,a),o=setTimeout((()=>{o=clearTimeout(o)}),r)),i||(clearTimeout(o),o=setTimeout((()=>{e.apply(t,a)}),r))}}function i(e){var t=this;let r=!1;return function(){if(!r){r=!0;for(var n=arguments.length,i=new Array(n),o=0;o<n;o++)i[o]=arguments[o];e.apply(t,i)}}}r.d(t,{J:()=>i,s:()=>n})},1478:(e,t,r)=>{"use strict";r.d(t,{$:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>l,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>d});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function l(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];l(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return l(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,l,d;try{a=this,o=[...arguments],l="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],l],e)}i(r+"start",[o,a,s],l,c);try{return d=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],l,c),e}finally{i(r+"end",[o,a,d],l,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function l(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log";n.K.logging},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{G4:()=>i});var n=r(2614);r(860).K.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.g.ERROR,n.g.FULL,n.g.OFF},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(7836);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2266:(e,t,r)=>{"use strict";r.d(t,{j:()=>k});var n=r(860),i=r(2983),o=r(9908),a=r(7836),s=r(1687),c=r(5289),u=r(6154),l=r(944),d=r(3969),f=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),m=r(2614),b=r(993);var y=r(2646),w=r(3434);function A(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||a.ee).get("logger")}(e),o=(0,w.YM)(i),s=new y.y(a.P);return s.level=n.level,s.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",s),i}function R(){const e=(0,f.pV)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&o.push(e.api[t](...n)):(0,l.R)(38,t)})),o.length>1?o:o[0]}(t,...n)}}))}const x={};function E(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.Ak)(e,"api");const p={};var y=a.ee.get(e),w=y.get("tracer");x[e]=m.g.OFF,y.on(g.G4.REPLAY_RUNNING,(t=>{x[e]=t}));var R="api-",E=R+"ixn-";function _(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),k(R,n,!0,o||null===r?"session":void 0)(t,r)}function N(){}p.log=function(e){let{customAttributes:t={},level:r=b.p_.INFO}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};(0,o.p)(d.xV,["API/log/called"],void 0,n.K.metrics,y),function(e,t){let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:b.p_.INFO;(0,o.p)(d.xV,["API/logging/".concat(i.toLowerCase(),"/called")],void 0,n.K.metrics,e),(0,o.p)(b.ET,[(0,v.t)(),t,r,i],void 0,n.K.logging,e)}(y,e,t,r)},p.wrapLogger=function(e,t){let{customAttributes:r={},level:i=b.p_.INFO}=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};(0,o.p)(d.xV,["API/wrapLogger/called"],void 0,n.K.metrics,y),A(y,e,t,{customAttributes:r,level:i})},h.forEach((e=>{p[e]=k(R,e,!0,"api")})),p.addPageAction=k(R,"addPageAction",!0,n.K.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.fr)(e).customTransaction=(r||"http://custom.transaction")+t,k(R,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,o.p)(d.xV,["API/start/called"],void 0,n.K.metrics,y),y.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,o.p)(d.xV,["API/recordReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.RECORD,[],void 0,n.K.sessionReplay,y)},p[g.G4.PAUSE]=function(){(0,o.p)(d.xV,["API/pauseReplay/called"],void 0,n.K.metrics,y),(0,o.p)(g.G4.PAUSE,[],void 0,n.K.sessionReplay,y)},p.interaction=function(e){return(new N).get("object"==typeof e?e:{})};const T=N.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(d.xV,["API/createTracer/called"],void 0,n.K.metrics,y),f||(0,o.p)(E+"tracer",[(0,v.t)(),e,r],i,n.K.spa,y),function(){if(w.emit((a?"":"no-")+"fn-start",[(0,v.t)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw w.emit("fn-err",[arguments,this,t],r),t}finally{w.emit("fn-end",[(0,v.t)()],r)}}}};function k(e,t,r,i){return function(){return(0,o.p)(d.xV,["API/"+t+"/called"],void 0,n.K.metrics,y),i&&(0,o.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,y),r?void 0:this}}function S(){r.e(296).then(r.bind(r,8778)).then((t=>{let{setAPI:r}=t;r(e),(0,s.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),y.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{T[e]=k(E,e,void 0,f?n.K.softNav:n.K.spa)})),p.setCurrentRouteName=f?k(E,"routeName",void 0,n.K.softNav):k(R,"routeName",!0,n.K.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(d.xV,["API/noticeError/called"],void 0,n.K.metrics,y),(0,o.p)("err",[t,(0,v.t)(),!1,r,!!x[e]],void 0,n.K.jserrors,y)},u.RI?(0,c.GG)((()=>S()),!0):S(),p}var _=r(5284);const N=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let T=!1;function k(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0,{init:o,info:a,loader_config:s,runtime:c={loaderType:r},exposed:l=!0}=t;const d=(0,f.pV)();a||(o=d.init,a=d.info,s=d.loader_config),(0,i.xN)(e.agentIdentifier,o||{}),(0,i.aN)(e.agentIdentifier,s||{}),a.jsAttributes??={},u.bv&&(a.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,a);const g=(0,i.D0)(e.agentIdentifier),p=[a.beacon,a.errorBeacon];T||(g.proxy.assets&&(N(g.proxy.assets),p.push(g.proxy.assets)),g.proxy.beacon&&p.push(g.proxy.beacon),R(),(0,f.US)("activatedFeatures",_.B),e.runSoftNavOverSpa&&=!0===g.soft_navigations.enabled&&g.feature_flags.includes("soft_nav")),c.denyList=[...g.ajax.deny_list||[],...g.ajax.block_internal?p:[]],c.ptid=e.agentIdentifier,(0,i.V)(e.agentIdentifier,c),void 0===e.api&&(e.api=E(e.agentIdentifier,n,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=l),T=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{K:()=>n,P:()=>i});const n={ajax:"ajax",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.pageAction]:8,[n.softNav]:9,[n.sessionReplay]:10,[n.logging]:11}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.263.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.263.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),l=0;l<u.length;l++){var d=u[l];if(d.getAttribute("src")==r||d.getAttribute("data-webpack")==t+o){s=d;break}}if(!s){c=!0;var f={296:"sha512-TBs8pRY/W1e4YzgroQONE2LdGjV5O7juw1SF7NvOnee+rj/znproh6CPX2kHL0dyqMqLl4mpTclA+3nAiAWZaQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={840:0,374:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.263.0.PROD"]=self["webpackChunk:NRBA-1.263.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566),n=i(7836);class o{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.LA)(16);this.agentIdentifier=e,this.ee=n.ee.get(e)}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("logInfo",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var a=i(860),s=i(2983);const c=Object.values(a.K);function u(e){const t={};return c.forEach((r=>{t[r]=function(e,t){return!0===(0,s.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var l=i(2266);var d=i(1687),f=i(4234),g=i(5289),p=i(6154);const h=e=>p.RI&&!0===(0,s.gD)(e,"privacy.cookies_enabled");function v(e){return!!s.hR.MO&&h(e)&&!0===(0,s.gD)(e,"session_trace.enabled")}var m=i(6389);class b extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,s.gD)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.Ak)(e,r):this.ee.on("manual-start-all",(0,m.J)((()=>{(0,d.Ak)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(h(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(296).then(i.bind(i,2987));n=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===a.K.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.Ze)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(296).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.R)(34,r),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};p.RI?(0,g.GG)((()=>n()),!0):n()}#t(e,t){switch(e){case a.K.sessionReplay:return v(this.agentIdentifier)&&!!t;case a.K.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,y.T,r),this.importAggregator()}}var A=i(4777),R=i(1478);class x extends A.J{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,R.$)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,R.$)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=_(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=_(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function _(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var N=i(384);var T=i(9908),k=i(2843),S=i(3878),I=i(782),j=i(1863);class O extends b{static featureName=I.T;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.T,r),p.RI&&((0,k.u)((()=>(0,T.p)("docHidden",[(0,j.t)()],void 0,I.T,this.ee)),!0),(0,S.sp)("pagehide",(()=>(0,T.p)("winPagehide",[(0,j.t)()],void 0,I.T,this.ee))),this.importAggregator())}}var P=i(3969);class D extends b{static featureName=P.TZ;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.TZ,r),this.importAggregator()}}new class extends o{constructor(t,r){super(r),p.gm?(this.sharedAggregator=new x({agentIdentifier:this.agentIdentifier}),this.features={},(0,N.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===a.K.softNav)),(0,l.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=u(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>a.P[e.featureName]-a.P[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==a.K.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===a.K.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===a.K.softNav)return;(function(e){switch(e){case a.K.ajax:return[a.K.jserrors];case a.K.sessionTrace:return[a.K.ajax,a.K.pageViewEvent];case a.K.sessionReplay:return[a.K.sessionTrace];case a.K.pageViewTiming:return[a.K.pageViewEvent];default:return[]}})(r.featureName).every((e=>e in this.features))||(0,e.R)(36,r.featureName),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,N.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[w,O,D],loaderType:"lite"})})()})();</script>
+<style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }/* Transition effect. */.js .lazyload, .js .lazyloading { opacity: 0; }.js .lazyloaded { opacity: 1; -webkit-transition: opacity 2000ms; transition: opacity 2000ms; }</style>
+<meta name="description" content="Rice traditions centered around the logo, colors, mascot, alma mater, fight song, the MOB and facts and fiction at Rice University." />
+<link rel="canonical" href="https://www.rice.edu/rice-traditions" />
+<link rel="shortlink" href="https://www.rice.edu/rice-traditions" />
+<meta property="og:site_name" content="Rice University" />
+<meta property="og:url" content="https://www.rice.edu/rice-traditions" />
+<meta property="og:title" content="Rice Traditions" />
+<meta property="og:description" content="Rice traditions centered around the logo, colors, mascot, alma mater, fight song, the MOB and facts and fiction at Rice University." />
+<meta name="twitter:description" content="Rice traditions centered around the logo, colors, mascot, alma mater, fight song, the MOB and facts and fiction at Rice University." />
+<meta name="google-site-verification" content="-5Kk0NsKqzujxs9iKveOdtUPqjKDx0X-lWe7daELsHg" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/sites/g/files/bxs2566/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<script src="/sites/g/files/bxs2566/files/google_tag/rice_u_ga4/google_tag.script.js?sg8x0m" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Rice Traditions | Rice University</title>
+      <link rel="preload" href="https://staticws.b-cdn.net/assets/fonts/TrajanPro/TrajanPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://staticws.b-cdn.net/assets/fonts/Copernicus/Copernicus Book/Book.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://staticws.b-cdn.net/assets/fonts/Mallory/Mallory Book/Book.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://staticws.b-cdn.net/assets/fonts/Copernicus/Copernicus Bold/Bold.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://staticws.b-cdn.net/assets/fonts/Mallory/Mallory Bold/Bold.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="stylesheet" media="all" href="/sites/g/files/bxs2566/files/css/css_X2g_jIjVnraTy1rn6sE_CJqnQsJVrhIXKzix-Iyla8U.css" />
+<link rel="stylesheet" media="all" href="https://kit.fontawesome.com/c22e70c3df.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/plyr@3.7.2/dist/plyr.css" />
+<link rel="stylesheet" media="all" href="https://staticws.b-cdn.net/assets/css/app.css" />
+<link rel="stylesheet" media="all" href="https://staticws.b-cdn.net/assets/css/extra.css" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/111","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany.front,adm_rice\/global,ckeditor_accordion\/accordion_style,lazy\/lazy,system\/base","theme":"adm_rice","theme_token":null},"ajaxTrustedUrl":[],"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.80000000000000004,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":[]},"placeholderSrc":"","preferNative":false,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"ckeditorAccordion":{"accordionStyle":{"collapseAll":null,"keepRowsOpen":null}},"user":{"uid":0,"permissionsHash":"62dfa34a6ad1d6d3731713f102c6ac6517b6492998ac308c53f03b7fcc8f3750"}}</script>
+<script src="/sites/g/files/bxs2566/files/js/js_Qntkd2OfLmEdRoi-S_F4_FF68KgtHEyCgHbcClDEBNk.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.7.2/dist/plyr.polyfilled.min.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/app.js" async></script>
+<script src="https://staticws.b-cdn.net/assets/js/calendar.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/events.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/facts.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/featured-articles.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/menus.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/news.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/profile-news.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/profiles.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/related-articles.js"></script>
+<script src="https://staticws.b-cdn.net/assets/js/extras.js" defer></script>
+
+        </head>
+  <body class="path-node page-node-type-page">
+    <a href="#main-content" class="visually-hidden skip-to-content">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH9QMD3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/653b6f472a2586b0ebbb56c1/script.js"></script>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <header class="header">
+  	<div class="header__content content-mobile">
+  		<div id="block-customheadercss">
+  
+    
+      
+            <div><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+
+/*** GENERAL ***/
+
+/*** MAIN CONTENT ***/
+main#main-content > div > div:last-child {
+	margin-bottom: 4rem;
+}
+
+/* Random Blocks */
+p.summary-tall {line-height: 1.5 !important;}
+.panel--two-columns .panel .panel__body p {line-height: 1.75; font-family: 'MalloryBook';}
+
+
+
+/* Article Images */
+.article .article__body figure img {width: auto !important; max-width: 100% !important; height: auto !important;}
+.article .article__body img {width: auto !important; max-width: 100% !important; height: auto !important;}
+
+/* Articles */
+h2.article__title.hover-break {
+    font-size: 3rem;
+}
+
+/* Twitter Embed */
+.twitter-tweet.twitter-tweet-rendered {
+    margin-top: 0px !important;
+}
+
+/* iFrame */
+iframe {max-width: 100%;}
+
+/* Header */
+.header {position: relative;}
+.header .logo-container {
+	max-width: 420px;
+}
+
+
+/* Video */
+.video {aspect-ratio: 16 / 9; width: 100%;}
+
+
+/* Announcement/Messages */
+.announcement p a {text-transform: none;}
+.article .article__news-list-summary span {color: #303B61; font-size: 16px;}
+
+/* Matrix */
+div.matrix p {font-size: 1.125rem; line-heigt: 1.5 !important; font-family: 'MalloryBook'; margin-left: .5rem;}
+
+/* 3-Column Text */
+.three-col-text a {text-transform: none;}
+
+/* Padding */
+.pv-5 {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+/* Menu */
+.menu__sub-items>button {font-size: 18px; text-transform: none;}
+.menu__sub-items>a {font-size: 18px; text-transform: none;}
+.menu__bottom li>a {font-family: 'MalloryBook'; font-size: 18px;}
+.menu--main button {text-align: left;}
+
+/* Quick Links Menu */
+.menu--quick { 
+    background-color: #13133E;
+}
+#block-homeunderheronav .menu--quick,
+.menu--quick > div {
+    display: flex;
+    flex-wrap: wrap;
+	padding: 1.25rem 1rem !important;
+	margin: 0 auto;
+    justify-content: center;
+}
+#block-homeunderheronav .menu--quick,
+.menu--quick > div, .menu--quick
+#block-homeunderheronav .menu--quick .menu__item,
+.menu--quick .menu__item {
+	color: #fff;
+	font-size: .875rem;
+    line-height: 2;
+}
+.menu--list {
+	padding: 0 40px;
+	border-left: solid 1px #a4c055;
+}
+.menu--list .menu__item { 
+    font-size: 1.5rem; 
+}
+
+
+/* Video */
+.video-embed-field-responsive-video {
+	margin-bottom: 2rem !important;
+}
+
+
+/* Breadcrumbs Nav */
+nav.breadcrumbs {
+	padding: 10px 32px 8px 30px; 
+	background-color: #13133E; 
+	border-radius: 25px 0 0 0;
+}
+nav.breadcrumbs a { color: #fff; }
+nav.breadcrumbs a:hover { color: #a5c155 }
+nav.breadcrumbs span, 
+nav.breadcrumbs span:not(.separator):last-of-type {
+	color: #fff;
+}
+
+
+/* 4-Column Grid */
+/* .panel--featured {
+	min-height: 300px; */
+}
+/* Titles (Headers) */
+.page-body__content h1 {
+	font-size: 2.75rem;
+	margin-bottom: 1rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.page-body__content h2 {
+	font-size: 2.25rem;
+	margin-bottom: 1rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.page-body__content h3 {
+	font-size: 2rem;
+	margin-bottom: .75rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.page-body__content h4 {
+	font-size: 1.75rem;
+	margin-bottom: .75rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.page-body__content h5 {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.page-body__content h6 {
+	font-size: 1.25rem;
+	margin-bottom: .5rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.article__body h1 {
+	font-size: 2.75rem;
+	margin-bottom: 1rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.article__body h2 {
+	font-size: 2.25rem;
+	margin-bottom: 1rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.article__body h3 {
+	font-size: 2rem;
+	margin-bottom: .75rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.article__body h4 {
+	font-size: 1.75rem;
+	margin-bottom: .75rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.article__body h5 {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+	font-family: CopernicusMedium,serif;
+	color: #00205B;
+}
+.article__body h6 {
+	font-size: 1.25rem;
+	margin-bottom: .5rem;
+	font-family: CopernicusMedium,serif;
+	color: #0A509E;
+}
+.panel .overlay__content h2 {
+	font-size: 32px;
+}
+/* Page Body */
+.page-body__content p {
+	font-size: 1.125rem;
+	padding-bottom: 1.5rem;
+}
+
+.page-body__content figure.align-left {
+	margin: 6px 30px 30px 0;
+}
+.page-body__content figure.align-right {
+	margin: 6px 0 30px 30px;
+}
+.page-body__content figure figcaption {
+	padding: 10px 20px;
+	background: #f3f3f3;
+	color: #000;
+}
+.page-body__content figure figcaption a {
+    text-decoration: underline dotted #00205B 0.1em;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1.5px;
+    display: inline;
+}
+
+.page-body__content figure figcaption a:hover {
+    text-decoration: underline solid #697E2F 0.1em;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1.5px;
+}
+.page-body__content blockquote p {
+	font-size: 1.5rem;
+}
+.page-body__content blockquote {
+	margin-bottom: 30px;
+}
+.page-body__content p a {
+	color: #3455DB;
+	line-height: normal !important;
+	text-decoration-style: dotted;
+	text-decoration-color: #00205B;
+	text-decoration-thickness: .1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+	display: inline;
+}
+.page-body__content p a:hover {
+	color: #697E2F;
+	text-decoration-style: solid;
+	text-decoration-color: #697E2F;
+	text-decoration-thickness: .1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+}
+.page-body__content ol a {
+	text-transform: none;
+}
+.page-body__content ol a::after {
+	display: none;
+}
+.article__main-image {
+	text-align: center;
+	padding: 2em;
+	display: none;
+}
+.article__main-image {
+	display: none;
+}
+.article--story .article__body p {
+	font-family: 'MalloryBook';
+}
+.article--story .article__body ol, .article--story .article__body ul {
+	font-family: 'MalloryBook';
+}
+.teaser-summary p a {
+	color: #3455DB;
+	line-height: normal !important;
+	text-decoration-style: dotted;
+	text-decoration-color: #00205B;
+	text-decoration-thickness: .1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+	display: inline;
+}
+.teaser-summary p a:hover {
+	color: #697E2F;
+	text-decoration-style: solid;
+	text-decoration-color: #697E2F;
+	text-decoration-thickness: 0.1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+}
+.article .article__body p a {
+	color: #3455DB;
+	line-height: normal !important;
+	text-decoration-style: dotted;
+	text-decoration-color: #00205B;
+	text-decoration-thickness: .1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+	display: inline;
+}
+.article .article__body p a:hover {
+	color: #697E2F;
+	text-decoration-style: solid;
+	text-decoration-color: #697E2F;
+	text-decoration-thickness: 0.1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+}
+.article--story h1.article__title {
+	font-size: 2.5rem;
+	line-height: 3rem;
+	margin-bottom: 1.5rem;
+}
+.article--story .article__body {
+	margin-top: 30px;
+}
+article.align-left {
+	margin: 0 30px 20px 0;
+}
+article.align-right {
+	margin: 0 0 20px 30px
+}
+article.align-center {
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+}
+.article .article__body figure.align-left {
+	margin: 0 30px 20px 0;
+}
+.article .article__body figure.align-right {
+	margin: 0 0 20px 30px
+}
+.article .article__share a.icon-share {
+	display: none;
+}
+.article .article__share-buttons {
+	display: none;
+}
+.article .article__breadcrumbs {
+	display: none;
+}
+.article .article__breadcrumbs span {
+	color: #44474F;
+}
+.article .article__breadcrumbs span:not(:first-of-type) {
+	color: #005B50;
+}
+.article .article__share a.icon-print::before {
+	font-size: 1em;
+}
+.article .date {
+	color: #44474F;
+}
+.icon-print::before {
+	color: #44474F;
+}
+div.body--two-columns h3 {
+	font-size: 2rem !important;
+	margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 64rem){
+.title__content.grid-mw--1200 h2 {font-size: 3rem; line-height: 1.25;}
+
+	.article--story .article__title {
+		font-size: 1.75rem !important;
+	}
+	.article--story h4.article__title {
+		font-size: 1.25rem !important;
+	}
+	.header__content {
+		padding: 1rem;
+	}
+}
+/*.article .article__body p a {
+	color: #3455DB;
+	text-decoration: none;
+	border-bottom: 2px #00205B dotted;
+	line-height: normal !important;
+}
+.article .article__body p a:hover {
+	color: #697E2F;
+	text-decoration: none;
+	border-bottom: 2px #697E2F solid;
+}
+*/
+/* Captions */
+.article .article__body figure figcaption, .article .article__summary figure figcaption {
+	background: #E0E2E6;
+	padding: 15px 20px;
+}
+figure figcaption {
+	color: #44474F;
+	line-height: 1.5;
+}
+/* Alignment */
+.page-body__content .align-right {
+	padding: 0;
+}
+
+/* Hero Footer */
+.hero .color-bg-gray-ultraLight, 
+.hero .hero__footer { 
+	background-color: #13133E !important; 
+	color: #fff;
+}
+.hero .hero__footer { border-bottom: 1px solid #f3f3f3; }
+.hero .hero__footer p { 
+	color: #fff;
+	margin: 0;
+}
+.hero .hero__footer p, 
+.hero .hero__footer p a, 
+.hero .hero__footer p em a {
+	font-size: clamp(1rem, 5vw, 1.25rem);
+	line-height: 1.37;
+	font-family: 'CopernicusBookItalic', serif;
+	font-style: italic;
+}
+.hero .hero__footer p a { color: #9CAF60; }
+.hero .hero__footer p a:hover { color: #a5c155; }
+.hero .overlay__content h1 {
+	font-size: clamp(2rem, 5vw, 2.75rem);
+	line-height: 1.25;
+}
+.hero .hero__title.overlay__content > p {
+	margin: 0;
+	font-size: clamp(1.125rem, 5vw, 1.25rem);
+	line-height: 1;
+}
+.hero .hero__title.overlay__content p + h1 {
+	margin-top: 0.5rem;
+}
+.hero .overlay--extraDark {
+	background: rgba(0,0,25,.75);
+}
+
+
+/* Lists */
+.page-body__content ul li, .page-body__content ol li {
+	font-size: 1.125rem;
+}
+.page-body__content ul a {
+text-transform: none;
+    font-size: 1.125rem;
+	color: #3455DB;
+	line-height: normal !important;
+	text-decoration: underline dotted #3455DB 0.1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+	display: inline;
+}
+.page-body__content ul a:hover {
+	text-transform: none;
+    font-size: 1.125rem;
+	color: #697E2F;
+	text-decoration: underline solid #697E2F 0.1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+}
+.page-body__content ul a::after {
+	display: none;
+}
+/* Calendar */
+.calendar__title h3 {
+	font-size: 2rem;
+	line-height: 1.15;
+}
+.calendar h3 strong {
+	font-size: 2rem;
+	line-height: 1.15;
+}
+.calendar h3 {
+	font-size: 2rem;
+	line-height: 1.15;
+}
+.calendar:hover { background-color: unset; }
+.calendar__event:hover a > *:not(h3) { color: #a5c155; }
+.calendar__link:hover { color: #a5c155; }
+
+/* Helpful Links */
+div.title .menu--list {
+	padding: 0 20px 0px 20px;
+}
+div.title .menu--list .menu__item {
+	font-size: 1.5rem;
+}
+div.title--tall {
+	padding: 30px 5% 40px;
+}
+/* Accordion */
+.ckeditor-accordion-container > dl dd {
+	padding: 25px 25px 0px;
+}
+.ckeditor-accordion-container > dl dt > a:hover {
+	background-color: #44474F;
+}
+.ckeditor-accordion-container > dl dt > a {
+	padding: 20px 15px 20px 50px;
+	background-color: #0A509E;
+	border-bottom: 1px solid #303B61;
+	font-size: 1.15em;
+}
+.ckeditor ol, .ckeditor ul, .page-body__content ol, .page-body__content ul {padding-bottom: 0.5em;}
+
+/* NEW TABLE 2023 */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+    font-family: 'MalloryBook';
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+font-size: 1.125rem;
+vertical-align: top;
+}
+
+table th {
+    font-size: .9rem;
+    letter-spacing: .25em;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #44474F;
+}
+table tbody td {border-bottom: 1px solid #ccc;}
+table > tr:hover, tbody tr:hover {background: #cfeefc !important;}
+table tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: rgba(224, 226, 230, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .85rem;
+    text-align: right;
+  }
+
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px;
+margin-right: 10px;
+background-color: #44474F;
+color: #fff;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/* Old Table */
+table.blueTable {
+	font-family: "MalloryBook",sans-serif;
+	background-color: #ffffff;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+table.blueTable td, table.blueTable th {
+	padding: 1em;
+}
+table.blueTable tbody td {
+	font-size: 1.15rem;
+}
+table.blueTable tr:nth-child(even) {
+	background: #f3f3f3;
+}
+table.blueTable thead {
+	background: #0A509E;
+}
+table.blueTable thead th {
+	font-size: 1.15rem;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: left;
+}
+table.blueTable tfoot td {
+	font-size: 1.15rem;
+}
+table.blueTable tfoot .links {
+	text-align: right;
+}
+table.blueTable tfoot .links a{
+	display: inline-block;
+	background: #1C6EA4;
+	color: #FFFFFF;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+.article__main-image {
+	display: none;
+}
+.button__text {
+	font-size: 1.25em;
+	font-weight: 600;
+}
+.alert {
+	padding: .75em;
+}
+form.webform-submission-form label {
+	margin-right: 1rem;
+}
+form.webform-submission-form {
+	padding-top: 0;
+}
+
+form.webform-submission-form .fieldset-legend {text-decoration: underline;}
+.webform-confirmation__message {
+	padding: 4rem 2rem;
+	font-size: 1.25rem;
+}
+.h1, h1 {
+	line-height: 1.5;
+}
+.h3, h3 {
+	margin-bottom: 1rem;
+}
+.resize500 img {
+	max-width:500px;
+}
+.resize300 img {
+	max-width:300px;
+}
+#block-views-block-news-rice-block-1, #block-views-block-news-releases-view-block-1,#block-views-block-featured-stories-rice-block-1 {
+	background: #001e6b;
+	padding: 2em 0;
+}
+.tableauPlaceholder {
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 64rem){
+	.article--story h4.article__title {
+		font-size: 1.5rem;
+	}
+	.resize500 img {
+		width:auto;
+	}
+	.resize300 img {
+		width:auto;
+	}
+}
+
+/* --- Views: Exposed Form --- */
+.views-exposed-form {
+	display: flex;
+	flex-wrap: wrap;
+	/*flex: 0 0 30%;
+	*/
+	/*width: 30%;
+	*/
+	padding: 1rem 2rem;
+	margin: 1% 1%;
+	align-items: center;
+	justify-content: center;
+	border: 2px dotted #054EA1;
+}
+.js-form-item {
+	padding: .2rem .5rem;
+	flex: 0 0 50%;
+}
+.js-form-item label {
+	margin: auto;
+	font-family: 'MalloryBook';
+	font-size: 1.1rem;
+	color: #00205b;
+}
+.form-select, .selectric-form-select, .form-text {
+	width: 100%;
+	margin: 0 0 .5em 0;
+	border: none;
+	border-bottom: 1px solid #bbb;
+}
+.form-text {
+	min-height: 2.5em;
+}
+.selectric {
+	border: none;
+	padding: 2px;
+}
+.form-actions {
+	display: flex;
+}
+.js-form-submit {
+	width: 100%;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    background: #A9C25C;
+    color: #fff;
+    border: 1px solid #A9C25C;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .3s ease;
+}
+.js-form-submit:hover {
+    background-color: #005b50;
+}
+
+/* Menu Footer */
+footer .footer__logo .image-responsive {
+	width: 100%;
+    max-width: 360px;
+}
+footer hr.hide { 
+    display: inline-flex;
+    visibility: hidden;
+    border-color: transparent !important; 
+    opacity: 0;
+    flex: 1;
+}
+footer .footer--content-box.footer__footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0 0;
+}
+footer nav.menu--footer {
+    margin: 0;
+    flex: 4;
+    line-height: 1.5;
+}
+footer nav.menu--footer a.menu__item,
+footer .footer__address a,
+footer .footer__address p {
+    display: inline-block;
+    line-height: 1;
+    font-size: .875rem;
+    color: #636466;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+footer nav.menu--footer a.menu__item:hover,
+footer .footer__address a:hover {
+    display: inline;
+	color: #697E2F;
+	text-decoration: underline solid #697E2F 0.1em;
+	text-decoration-skip-ink: auto;
+	text-underline-offset: 1.5px;
+}
+footer .footer__address {
+    flex: 3;
+}
+
+/* Footer Back to Top Sticky Button */
+.menu--footer .menu__item:last-child {
+    position: fixed;
+	bottom: 0.5rem;
+	right: 0.5rem;
+    left: auto;
+    padding: 1rem;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    color: #303b61;
+    background: #303b61;
+	border: 1px solid #303b61;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 8px;
+	text-align: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.menu--footer .menu__item:last-child::after {
+	color: #fff;
+	top: 15%;
+    font-size: 2rem;
+}
+.menu--footer .menu__item:last-child:focus,
+.menu--footer .menu__item:last-child:active {
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent;
+}
+.menu--footer .menu__item:last-child:hover {
+	color: #a5c151;
+	background: #a5c151;
+	border-color: #a5c151;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu--footer .menu__item:last-child:hover::after {
+	color: #303B61;
+}
+
+.footer__content {
+    padding: 0px 80px 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__content > .tal {
+    flex: 1 1 100%;
+}
+footer .footer--content-box,
+footer .footer__address {
+    flex: 4;
+}
+
+
+/* Dividers */
+.ckeditor hr, .page-body__content hr {
+    margin: 0.5rem 2.5rem 2.5rem;
+}
+
+/* Test: Get rid of all arrows after!!! */
+.announcement .p a::after, .announcement form.webform-submission-form .description a::after, .announcement p a::after, .article--event .article__title::after, .calendar__link::after, .card--stacked .a.card__title::after, .card--stacked .h5.a::after, .card--stacked a.card__title::after, .card--stacked a.h5::after, .card--stacked nav.breadcrumbs span.card__title:last-of-type:not(.separator)::after, .card--stacked nav.breadcrumbs span.h5:last-of-type:not(.separator)::after, .ckeditor ol .a::after, .ckeditor ol a::after, .ckeditor ol nav.breadcrumbs span:last-of-type:not(.separator)::after, .ckeditor ul .a::after, .ckeditor ul a::after, .ckeditor ul nav.breadcrumbs span:last-of-type:not(.separator)::after, .icon-arrow-right::after, .invert-link .link--inline-block .link__title::after, .link--block .link__title::after, .link--inline-block .link__title::after, .link::after, .list__item .a::after, .list__item a::after, .list__item nav.breadcrumbs span:last-of-type:not(.separator)::after, .list__link::after, .menu--article .menu__item::after, .menu--list .menu__item::after, .page-body__content ol .a::after, .page-body__content ol a::after, .page-body__content ol nav.breadcrumbs span:last-of-type:not(.separator)::after, .page-body__content ul .a::after, .page-body__content ul a::after, .page-body__content ul nav.breadcrumbs span:last-of-type:not(.separator)::after, form.webform-submission-form .announcement .description a::after, nav.breadcrumbs .card--stacked span.card__title:last-of-type:not(.separator)::after, nav.breadcrumbs .card--stacked span.h5:last-of-type:not(.separator)::after, nav.breadcrumbs .ckeditor ol span:last-of-type:not(.separator)::after, nav.breadcrumbs .ckeditor ul span:last-of-type:not(.separator)::after, nav.breadcrumbs .list__item span:last-of-type:not(.separator)::after, nav.breadcrumbs .page-body__content ol span:last-of-type:not(.separator)::after, nav.breadcrumbs .page-body__content ul span:last-of-type:not(.separator)::after {
+    content: none;
+}
+
+@media (max-width: 75rem) {
+    /* Menu Footer */
+    footer .footer--content-box.footer__footer-menu {
+        flex-direction: column;
+        margin: 0.5rem 0 0;
+    }
+    footer nav.menu--footer {
+        text-align: center !important;
+    }
+    footer .footer__address {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    footer .footer__address span.hide\@s {
+        display: none;
+    }
+    footer .footer__address a,
+    footer .footer__address p {
+        font-size: .75rem;
+    }
+    footer .footer__address p {
+        line-height: 1.5 !important;
+    }
+}
+
+@media (max-width: 64rem) {
+    /*** MAIN CONTENT ***/
+	main#main-content > div > div:last-child {
+		margin-bottom: 2.5rem;
+	}
+	.view-group {
+		margin: 0 1em;
+	}
+	.menu__search-btn, .menu__share-btn {
+		display: none;
+	}
+
+	/* Header */
+	.header { position: sticky; }
+	.header .logo-container {
+		width: 100%;
+		max-width: 320px;
+	}
+	.menu--mobile-icon {
+		padding: 0;
+	}
+	.icon-menu {
+		padding-top: 0.5rem;
+	}
+
+     /* Quick Links Menu */
+     #block-homeunderheronav .menu--quick,
+     .menu--quick > div {
+         background-color: #fff;
+         justify-content: center;
+         align-items: stretch;
+         gap: 0.5rem;
+     }
+     #block-homeunderheronav .menu--quick .menu__item,
+     .menu--quick .menu__item, 
+     .menu--quick .menu__item:first-child,
+     .menu--quick .menu__item:last-child {
+         margin: 0;
+         padding: 0;
+         flex: 1 0 48%;
+         display: inline-flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         border: 2px solid #13133e;
+         border-radius: 4px;
+         padding: 1rem 0.5rem;
+         background: #13133e;
+         line-height: 1.75;
+         text-decoration: none;
+     }
+     .menu--quick > div > div {
+         margin: 0;
+         padding: 0;
+         flex: 1 0 48%;
+         display: inline-flex;
+         flex-direction: row;
+         align-items: stretch;
+         justify-content: center;
+     }
+    /* Dividers */
+	.ckeditor hr, .page-body__content hr, 
+    footer hr.hide {
+		margin: 0.5rem 0.5rem 1.5rem;
+	}
+
+}
+
+
+
+@media (max-width: 48rem) {
+	.views-exposed-form {
+		display: block;
+	}
+	.form-select, .selectric-form-select, .form-text {
+		margin: 0;
+	}
+	.js-form-submit {
+		width: 50%;
+		left: 25%;
+	}
+
+	/* Hero Footer */
+	.hero .hero__footer { padding: 2rem 2% !important; }
+
+    /* Menu Footer */
+    footer .footer__address {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/* CTA Green Buttons */
+.cta-button--wrapper { width: 100%; }
+.cta-button--wrapper.multi-btn { display: flex; flex-wrap: wrap; row-gap: 1rem; }
+.cta-button--wrapper .cta-button--green { 
+	display: block; text-align: center; padding: 1rem .5rem; font-size: 1.2rem; font-weight: bold; 
+	transition: all .3s ease; text-decoration: none; border: 1px solid #a4c055; border-radius: 4px; 
+	text-transform: uppercase; letter-spacing: 2px; background: #fff; color: #054ea1; }
+.cta-button--wrapper.multi-btn .cta-button--green { width: 100%; padding: 1rem 2rem; }
+.cta-button--wrapper .cta-button--green.btn-top { width: max-content; padding-left: 1rem; padding-right: 1rem; }
+	@media screen and (min-width: 64em) {
+		.cta-button--wrapper.multi-btn { display: flex; gap: 1rem; justify-content: center; }
+		.cta-button--wrapper.multi-btn .cta-button--green { width: auto; }
+		.cta-button--wrapper .cta-button--green:hover { background: #a4c055; color: #fff; }
+	}
+
+/*--><!]]>*/
+</style><script>
+<!--//--><![CDATA[// ><!--
+
+    var elements = document.getElementsByClassName('ckeditor-accordion-toggler');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].href = 'ckeditor-accordion-container';
+    }
+
+//--><!]]>
+</script><script>
+<!--//--><![CDATA[// ><!--
+
+ var $ = jQuery;
+  $(window).on('load', function() {
+	$('a.menu__item.fr').hide();
+  });
+  $(window).scroll(function() {
+    if (window.screen.width >= 768) {
+
+      if (window.screen.width < 1180) {
+
+        if ($(this).scrollTop() < 600 ) {
+          $('a.menu__item.fr').hide();
+        } else {
+          $('a.menu__item.fr').show();
+        }
+
+      } else {
+
+        if ($(this).scrollTop() < 900 ) {
+          $('a.menu__item.fr').hide();
+        } else {
+          $('a.menu__item.fr').show();
+        }
+
+      }
+
+    } else { 
+		$('a.menu__item.fr').show();
+    }
+  });
+
+
+//--><!]]>
+</script></div>
+      
+  </div>                      <div class="fl logo-container">
+                              <a class="header__logo" href="https://www.rice.edu"><img class="image-responsive" src="/sites/g/files/bxs2566/files/2019-08/Rice_University_Horizontal_Blue.svg" alt="Rice University Logo"></a>
+            </div>
+            
+<div class="fr menu-box">
+  <nav class="menu menu--header">
+    <button id="share-button" class="menu__share-btn menu__item button button--round button--small share-fade" title="Social Menu" >
+       <i class="button__icon button__icon--center icon icon-social"></i>
+    </button>
+    <div class="menu__share">
+      <a href="https://www.linkedin.com/school/riceuniversity/" class="button__icon-row icon icon-linkdin" tabindex="-1" title="Linked In"></a>      <a href="https://www.facebook.com/RiceUniversity/" class="button__icon-row icon icon-fb" tabindex="-1" title="Facebook"></a>      <a href="https://www.youtube.com/riceuniversity" class="button__icon-row icon icon-yt" tabindex="-1" title="YouTube"></a>      <a href="https://twitter.com/riceuniversity" class="button__icon-row icon icon-twitter" tabindex="-1" title="Twitter"></a>      <a href="https://www.instagram.com/riceuniversity/" class="button__icon-row icon icon-instagram" tabindex="-1" title="Instagram"></a>          </div>
+    <button id="search-button" class="menu__search-btn menu__item button button--round button--round button--small share-fade" title="Search">
+      <i class="button__icon button__icon--center icon icon-search"></i>
+    </button>
+    <!--a id="login-button" class="share-fade menu__item button button--inline" title="Login">
+      <span class="button__text hide@s">Login</span><i class="icon icon-login"></i>
+    </a-->
+    <button id="menu-button" class="hide@m menu__item button button--inline menu-button menu-end" title="Menu" aria-expanded="false" aria-label="Open Menu" aria-controls="site-nav">
+      <span class="button__text">Menu</span><i class="icon icon-menu" aria-hidden="true"></i>
+    </button>
+    <div class="inline@m hide menu--mobile-icon tar">
+      <button id="menu-button-mobile" class="menu__item button menu-button" title="Mobile Menu">
+        <i class="icon icon-menu"></i>
+      </button>
+      <button id="close-button-mobile" class="menu__item hideim button close-button menu__close-button-mobile" title="Close">
+        <i class="icon icon-close"></i>
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="menu__search">
+  <div class="search hidden-sm">
+    <form action="https://search.rice.edu" name="gs" method="get">
+      <label class="hidden" for="p">Search Form</label>
+      <input class="search-box" name="q" type="text" id="p" title="search engine" aria-label="Search Terms" size="20" maxlength="255" placeholder="Search..." tabindex="-1">
+      <button title="Search" class="search-button" type="submit" name="tab" value="Search" tabindex="-1"></button>
+      <button id="search-close" class="search-close-button" type="button" tabindex="-1"></button>
+    </form>
+  </div>
+</div>
+
+<nav role="navigation" aria-labelledby="block-mainnav-menu" id="block-mainnav">
+            
+  <h2 class="visually-hidden" id="block-mainnav-menu">Main Nav</h2>
+  
+
+        
+
+<div class="menu--nav">
+  <script>
+   (function() {
+     var cx = '014332935913219502104:djq0abwo2eq';
+     var gcse = document.createElement('script');
+     gcse.type = 'text/javascript';
+     gcse.async = true;
+     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(gcse, s);
+   })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+
+  <div class="menu--items" aria-hidden="false">
+    <button class="menu__back hide@m">&lt; back</button>
+                      <ul region="header" class="menu--main">
+                            <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">About Rice</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items"><button class="arrow" tabindex="-1">At a Glance</button>
+                      <ul class="menu__bottom" tabindex="-1">
+                  <li class="menu__bottom-items">
+                        <a href="/about" tabindex="-1" data-drupal-link-system-path="node/29">Overview of Rice</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="/nasa" tabindex="-1" data-drupal-link-system-path="node/401">Rice and NASA</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="/rice-traditions" tabindex="-1" data-drupal-link-system-path="node/111" class="is-active">Traditions</a>
+                    </li>
+              </ul>
+    
+          </li>
+                                      <li class="menu__sub-items">
+                                <a href="/mission-values" tabindex="-1" data-drupal-link-system-path="node/486">Mission and Values</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/university-leadership" tabindex="-1" data-drupal-link-system-path="node/89">University Leadership</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/rice-community" tabindex="-1" data-drupal-link-system-path="node/101">Rice in the Community</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://jobs.rice.edu" target="_blank" tabindex="-1">Employment Opportunities</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://global.rice.edu" target="_blank" tabindex="-1">Global Rice</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://online.rice.edu" target="_blank" tabindex="-1">Rice Online</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://news.rice.edu" target="_blank" tabindex="-1">Rice News</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Academics</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/academics" tabindex="-1" data-drupal-link-system-path="node/35">Academics Overview</a>
+                    </li>
+                                      <li class="menu__sub-items"><button class="arrow" tabindex="-1">Schools</button>
+                      <ul class="menu__bottom" tabindex="-1">
+                  <li class="menu__bottom-items">
+                        <a href="https://engineering.rice.edu/" target="_blank" tabindex="-1">George R. Brown School of Engineering</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://business.rice.edu/?utm_medium=cpc&amp;utm_source=website&amp;utm_campaign=july-web-track-academics" target="_blank" tabindex="-1">Jesse H. Jones Graduate School of Business</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://arch.rice.edu/" target="_blank" tabindex="-1">School of Architecture</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://humanities.rice.edu/" target="_blank" tabindex="-1">School of Humanities</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://socialsciences.rice.edu/" target="_blank" tabindex="-1">School of Social Sciences</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://glasscock.rice.edu/" target="_blank" tabindex="-1">Susanne M. Glasscock School of Continuing Studies</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://music.rice.edu/" target="_blank" tabindex="-1">The Shepherd School of Music</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://naturalsciences.rice.edu/" target="_blank" tabindex="-1">Wiess School ofNatural Sciences</a>
+                    </li>
+              </ul>
+    
+          </li>
+                                      <li class="menu__sub-items">
+                                <a href="/majors-minors-and-programs" tabindex="-1" data-drupal-link-system-path="node/71">Majors, Minors, Departments and Programs</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://online.rice.edu/" target="_blank" tabindex="-1">Rice Online</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/allied-administrative-and-support-departments" tabindex="-1" data-drupal-link-system-path="node/291">Allied, Administrative and Support Departments</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Admission &amp; Aid</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/admission-aid" tabindex="-1" data-drupal-link-system-path="node/1061">Admission and Aid Overview</a>
+                    </li>
+                                      <li class="menu__sub-items"><button class="arrow" tabindex="-1">Undergraduate</button>
+                      <ul class="menu__bottom" tabindex="-1">
+                  <li class="menu__bottom-items">
+                        <a href="https://admission.rice.edu" target="_blank" tabindex="-1">Office of Admission</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://admission.rice.edu/visit" target="_blank" tabindex="-1">Visit</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://admission.rice.edu/apply" target="_blank" tabindex="-1">Undergraduate Application</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://financialaid.rice.edu" target="_blank" tabindex="-1">Office of Financial Aid</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="/undergraduate-resources" tabindex="-1" data-drupal-link-system-path="node/122">Undergraduate Resources</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="/parent-and-family-resources" tabindex="-1" data-drupal-link-system-path="node/136">Parent and Family Resources</a>
+                    </li>
+              </ul>
+    
+          </li>
+                                      <li class="menu__sub-items"><button class="arrow" tabindex="-1">Graduate</button>
+                      <ul class="menu__bottom" tabindex="-1">
+                  <li class="menu__bottom-items">
+                        <a href="https://graduate.rice.edu/programs-study" target="_blank" tabindex="-1">Graduate Programs of Study</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://graduate.rice.edu/admissions/how-to-apply" target="_blank" tabindex="-1">Graduate Application</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://graduate.rice.edu/admissions/costofstudy" target="_blank" tabindex="-1">Cost and Aid</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="/graduate-resources" tabindex="-1" data-drupal-link-system-path="node/145">Graduate Resources</a>
+                    </li>
+              </ul>
+    
+          </li>
+                                      <li class="menu__sub-items"><button class="arrow" tabindex="-1">Continuing Studies</button>
+                      <ul class="menu__bottom" tabindex="-1">
+                  <li class="menu__bottom-items">
+                        <a href="https://glasscock.rice.edu/community-learning-engagement" target="_blank" tabindex="-1">Community Learning and Engagement</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://glasscock.rice.edu/professionals" target="_blank" tabindex="-1">Professional and Executive Programs</a>
+                    </li>
+                  <li class="menu__bottom-items">
+                        <a href="https://glasscock.rice.edu/continuing-studies" target="_blank" tabindex="-1">About the School</a>
+                    </li>
+              </ul>
+    
+          </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://business.rice.edu/rice-business-executive-education?utm_medium=cpc&amp;utm_source=website&amp;utm_campaign=july-web-track-admissions" target="_blank" tabindex="-1">Executive Education</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://oie.rice.edu/IR-reporting" target="_blank" tabindex="-1">Admission Statistics</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://financialaid.rice.edu" target="_blank" tabindex="-1">Financial Aid</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Alumni and Giving</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="https://alumni.rice.edu" target="_blank" tabindex="-1">Association of Rice Alumni </a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://dar.rice.edu/" target="_blank" tabindex="-1">Careers in Development and Alumni Relations</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://giving.rice.edu" target="_blank" tabindex="-1">Give to Rice</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://thericeinvestment.rice.edu/" target="_blank" tabindex="-1">The Rice Investment</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://volunteer.rice.edu/" target="_blank" tabindex="-1">Volunteer Engagement</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Athletics</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/athletics" tabindex="-1" data-drupal-link-system-path="node/157">Athletics Overview</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://riceowls.com/" target="_blank" tabindex="-1">RiceOwls.com</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://riceowls.com/calendar" target="_blank" tabindex="-1">Sport Schedules</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://riceowls.com/sports/2018/7/18/rice-athletics-tickets-office.aspx" target="_blank" tabindex="-1">Tickets</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://recreation.rice.edu/ims" target="_blank" tabindex="-1">Intramural Sports</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Campus Life</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/campus-life" tabindex="-1" data-drupal-link-system-path="node/144">Campus Life Overview</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://dou.rice.edu/residential-colleges" target="_blank" tabindex="-1">Residential Colleges</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://dining.rice.edu/" target="_blank" tabindex="-1">Rice Dining</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://studentcenter.rice.edu/student-activities" target="_blank" tabindex="-1">Student Activities</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://library.rice.edu/" target="_blank" tabindex="-1">Fondren Library</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://recreation.rice.edu" target="_blank" tabindex="-1">Gibbs Recreation and Wellness Center</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://arts.rice.edu/" target="_blank" tabindex="-1">Arts and Events</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://moody.rice.edu" target="_blank" tabindex="-1">Moody Center for the Arts</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button onclick="location.href='/faculty-staff-resources'" tabindex="-1">Faculty and Staff</button>
+                                  </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Research</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/discover" tabindex="-1" data-drupal-link-system-path="node/1031">Research &amp; Innovation at Rice</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://research.rice.edu" target="_blank" tabindex="-1">Office of Research</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/research-centers-groups" tabindex="-1" data-drupal-link-system-path="node/194">Research Centers, Institutes and Groups</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://corporate.rice.edu/research" target="_blank" tabindex="-1">Corporate Research Opportunities</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://news.rice.edu/tag/research" target="_blank" tabindex="-1">Research News</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                  <li class="menu menu__sub-toggle">
+                          <button aria-expanded="false" tabindex="-1">Visit Rice</button>
+                                                  <ul class="menu--sub hide@m">
+                            <li class="menu__sub-items">
+                                <a href="/visit-rice" tabindex="-1" data-drupal-link-system-path="node/108">Visit Rice Overview</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/get-to-rice" tabindex="-1" data-drupal-link-system-path="node/286">Get to Rice</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://campustravel.com/university/rice-university/" target="_blank" tabindex="-1">Where to Stay</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="/campus-maps" tabindex="-1" data-drupal-link-system-path="node/112">Campus Maps</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://parking.rice.edu" target="_blank" tabindex="-1">Parking</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://rice.ridesystems.net/routes" target="_blank" tabindex="-1">Campus Shuttle Service</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://admission.rice.edu/visit" target="_blank" tabindex="-1">Schedule My Visit to Rice (Admissions)</a>
+                    </li>
+                                      <li class="menu__sub-items">
+                                <a href="https://welcome.rice.edu/" target="_blank" tabindex="-1">Welcome Center</a>
+                    </li>
+                        </ul>
+    
+                      </li>
+                    </ul>
+  
+  </div>
+  <button id="close-button" class="hide@m menu__item hideim button button--inline close-button menu__close-button" title="Close">
+    <span class="button__text">Close</span><i class="icon icon-close"></i>
+  </button>
+</div>
+
+
+
+
+
+  </nav>
+<div class="menu--image" style="background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ), url('/sites/g/files/bxs2566/files/styles/banner_extra_large_1600xauto/public/2023-10/rice-edu-menu-background-v0.webp.jpeg?itok=YTZ-1_Gw');"  id="block-menubackground">
+  </div>
+
+  	</div>
+	</header>
+
+
+<main id="main-content" role="main">
+
+  
+
+    <div>
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-adm-rice-content">
+  
+    
+      <div data-history-node-id="111" role="article" about="/rice-traditions" class="container">
+
+  
+  
+
+      <div class="hero" >
+      <div class="hero__image image-background" style="background-image: url('/sites/g/files/bxs2566/files/styles/banner_extra_large_1600xauto/public/2019-06/beer-bike-traditions.jpg.jpeg?itok=SEIHLnTl');">
+        <div class="overlay overlay--extraDark">
+          <div class="hero__title overlay__content overlay__content--center">
+
+            
+            <h1>
+            <div>Rice Traditions</div>
+      </h1>
+          </div>
+        </div>
+
+                  <nav class="hero__breadcrumbs breadcrumbs">
+                                          <a href="/">RICE</a>
+                <span class="separator">&gt;</span>
+                                                        <span>Rice Traditions</span>
+                                    </nav>
+        
+      </div>
+      
+
+          </div>
+  
+      <nav class="menu menu--quick">
+    
+  </nav>
+  
+  
+
+      <div class="grid-mw--1080 ph@m-5">
+      <div class="page-body__content">
+        
+            <div><h2>Rice Academic Seal and Logo </h2>
+
+<p>The academic seal of Rice University was designed in 1912 by Pierre de Chaignon la Rose of Cambridge, Massachusetts, who combined the main elements of the arms of 16 prominent families bearing the names Rice or Houston. Owls of Athena-symbolic of wisdom-were chosen for the charges. The Athenian owls on the Rice seal were patterned after a design found on a small, silver tetradrachmenon coin dating from the middle of the fifth century B.C. And because Rice University was dedicated by its founder to the advancement of letters, science and art, these words also were incorporated into the seal.</p>
+
+<h2>Rice Colors: Blue and Gray</h2>
+
+<p>In 1912, Rices first president, Edgar Odell Lovett, chose as the school colors a blue still deeper than the Oxford blue and the Confederate gray, enlivened by a tinge of lavender. It has been suggested that blue and gray were chosen in recognition of the fact that Rice's founder amassed much of the fortune that formed the initial endowment of the Rice Institute by trading with both the North and the South during the Civil War.</p>
+
+<h2>Rice Mascot: Owl</h2>
+
+<p>When athletic activities began at the Rice Institute in 1912, the teams adopted as their mascot the owl from the Rice seal. Over the years, Rices various mascots have included students dressed in owl costumes, live Great Horned Owls, and large owl statues of fiberglass and of canvas, the latter being particularly famous in Rice lore (see below).</p>
+
+<h2>Mascot Name: Sammy</h2>
+
+<p>An early symbol of Rices athletic teams was large canvas owl, a tempting target for the institutes rivals. In 1917, when students from Southwest Conference football rival Texas A&amp;M kidnapped the owl, Rice students pooled their resources and hired a private detective to go to College Station to find the missing mascot. When the detective, having recovered the owl, sent a coded telegram to Houston that read Sammy is fairly well and would like to see his parents at eleven oclock, the Rice mascot had a name.</p>
+
+<h2>Alma Mater: Rices Honor</h2>
+
+<p>All for Rices Honor, we will fight on.<br />
+We will be fighting when this day is done.<br />
+And when the dawn comes breaking,<br />
+We'll be fighting on, Rice, for the Gray and Blue.<br />
+We will be loyal, to Rice be true.</p>
+
+<p>(To the tune of Our Director March, written by Ben H. Mitchell 24 in 1922)</p>
+
+<h2>Rice Fight Song</h2>
+
+<p>Fight for Rice, Rice fight on, loyal sons arise.<br />
+The Blue and Gray for Rice today, comes breaking through skies.<br />
+Fight, fight, fight! Stand and cheer, Victry's near, Sammy leads the way.<br />
+Onward go! to crush the foe, well fight for Blue and Gray.<br />
+(Words and music by Louis Gerard 40)</p>
+
+<h2>The MOB</h2>
+
+<p>The MOB  Rice Universitys Marching Owl Band</p>
+
+<h2>Rice Fact and Fiction</h2>
+
+<p><a href="https://issuu.com/riceuniversity/docs/rice_winter__06/32">What's Your Rice Historical IQ?</a>Test your knowledge about Rice history by taking this short true-or-false quiz. Then compare your knowledge with that of the wizard of Rice history, Professor John Boles, with the John Boles Rice History Meter.</p>
+</div>
+      
+      </div>
+    </div>
+  
+  
+</div>
+
+
+
+  </div><div id="block-ricetraditions">
+  
+    
+      <div id="block-visitricehelpfullinks-2">
+  
+    
+        <div id="helpful-links" class="title title--tall title--reverse">
+      <div class="grid-3 grid@m grid-mw--1380-flex">
+        <div class="col">
+          <h1 class="border@m-b border-color-green-base"><strong>Helpful</strong> Links</h1>
+        </div>
+                                <div class="col">
+          <nav class="menu menu--list">
+                          <a href="https://ocfr.rice.edu/" target="_blank" class="menu__item tal">Corporate Relations</a>
+                          <a href="https://publicaffairs.rice.edu/university-relations" target="_blank" class="menu__item tal">University Relations</a>
+                          <a href="https://mcc.rice.edu" target="_blank" class="menu__item tal">Multicultural Community Relations</a>
+                      </nav>
+        </div>
+                <div class="col">
+          <nav class="menu menu--list">
+                          <a href="https://ccl.rice.edu/" target="_blank" class="menu__item tal">Center for Civic Leadership</a>
+                          <a href="https://kinder.rice.edu/" target="_blank" class="menu__item tal">Kinder Institute for Urban Research</a>
+                          <a href="https://k12.rice.edu/" target="_blank" class="menu__item tal">K-12 Initiatives</a>
+                      </nav>
+        </div>
+              </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+</main>
+
+  <footer class="footer">
+    <div class="footer__content grid">
+                    <div class="tal tac@l col col-5 col@xl-3 col@ml">
+                                  <a class="footer__logo" href="https://www.rice.edu"><img class="image-responsive" src="/sites/g/files/bxs2566/files/2019-08/Rice_University_Horizontal_Blue.svg" alt="Rice University Logo"></a>
+                </div>
+          <div class="footer--content-box col@ml footer__footer-menu">
+    <nav class="footer__menu menu menu--footer tal tac@m">
+                                    <a href="https://giving.rice.edu" class="menu__item footer__menu">Give to Rice</a>
+                  <a href="https://brand.rice.edu" class="menu__item footer__menu">Brand</a>
+                  <a href="https://emergency.rice.edu" class="menu__item footer__menu">Emergency</a>
+                  <a href="https://policy.rice.edu/" class="menu__item footer__menu">Policies</a>
+                  <a href="https://news.rice.edu" class="menu__item footer__menu">News</a>
+                  <a href="https://global.rice.edu/" class="menu__item footer__menu">Global</a>
+                  <a href="https://online.rice.edu" class="menu__item footer__menu">RIce Online</a>
+                  <a href="https://library.rice.edu/" class="menu__item footer__menu">Library</a>
+                  <a href="https://titleix.rice.edu" class="menu__item footer__menu">Title IX</a>
+                  <a href="https://oit.rice.edu/" class="menu__item footer__menu">OIT</a>
+                  <a href="/faculty-staff-resources" class="menu__item footer__menu" data-drupal-link-system-path="node/175">Faculty/Staff</a>
+                  
+      <a href="#" class="menu__item fr">BACK TO TOP</a>
+    </nav>
+
+    
+        <hr class="hide block@ml">
+      <div class="footer__address">
+        <p><a href="https://maps.app.goo.gl/Yys7VjgxSD1pgQRMA" rel="noopener" target="_blank">6100 Main St., Houston, TX 77005-1827</a><span class="hide@s">|</span></p>
+
+<p>Mailing Address: P.O. Box 1892, Houston, TX 77251-1892<span class="hide@s">|</span></p>
+
+<p><a href="tel:713-348-0000">713-348-0000</a> | <a href="/privacy"><strong>Privacy Policy</strong></a> | <a href="https://www.rice.edu/campus-carry-policy">Campus Carry</a>| <a href="https://access.rice.edu/">Web Accessibility</a></p>
+
+      </div>
+    </div>
+  <div id="block-msclaritytrackingcode">
+  
+    
+      
+            <div><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "l5b1vqq92h");
+</script></div>
+      
+  </div>
+    </div>
+  </footer>
+
+
+  </div>
+
+    
+
+    <script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/g/files/bxs2566/files/js/js_3gLEnugEgDF5NrEt4Kte3qq2c84vo40J1vPLB9xg2IU.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"be757ebc50","applicationID":"1737010280","transactionName":"NFAGMEtRCBYFWxJaCw0aJQdNWQkLS3wURhQCWTgKVlQDOSdXCEcWDFkIAUtsKAoAXTBaARR2CwpNQgkJCF0UHloVXAET","queueTime":3,"applicationTime":488,"atts":"GBcFRgNLGxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="University Health Service">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>About Us - University Health Service</title>
+	<link rel="canonical" href="https://www.rochester.edu/uhs/healthpromotion/about/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="About Us - University Health Service" />
+	<meta property="og:url" content="https://www.rochester.edu/uhs/healthpromotion/about/" />
+	<meta property="og:site_name" content="University Health Service" />
+	<meta property="article:modified_time" content="2024-01-22T18:27:17+00:00" />
+	<meta property="og:image" content="https://www.rochester.edu/uhs/wp-content/uploads/2022/08/Link-Preview-Health-Service-1200x630.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.rochester.edu/uhs/healthpromotion/about/","url":"https://www.rochester.edu/uhs/healthpromotion/about/","name":"About Us - University Health Service","isPartOf":{"@id":"http://www.rochester.edu/uhs/#website"},"datePublished":"2023-01-11T16:56:00+00:00","dateModified":"2024-01-22T18:27:17+00:00","breadcrumb":{"@id":"https://www.rochester.edu/uhs/healthpromotion/about/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.rochester.edu/uhs/healthpromotion/about/"]}]},{"@type":"BreadcrumbList","@id":"https://www.rochester.edu/uhs/healthpromotion/about/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.rochester.edu/uhs/"},{"@type":"ListItem","position":2,"name":"Health Promotion Office","item":"https://www.rochester.edu/uhs/healthpromotion/"},{"@type":"ListItem","position":3,"name":"About Us"}]},{"@type":"WebSite","@id":"http://www.rochester.edu/uhs/#website","url":"http://www.rochester.edu/uhs/","name":"University Health Service","description":"University of Rochester","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"http://www.rochester.edu/uhs/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//unpkg.com' />
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel='dns-prefetch' href='//pro.fontawesome.com' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='core-theme-fonts-css' href='https://use.typekit.net/ziq2akc.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-style-css' href='https://unpkg.com/swiper/swiper-bundle.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='core-theme-base-css' href='https://www.rochester.edu/uhs/wp-content/themes/ur-core/css/master.min.css?ver=16.34.05.19.08.2024' type='text/css' media='all' />
+<link rel='stylesheet' id='core-theme-print-css' href='https://www.rochester.edu/uhs/wp-content/themes/ur-core/css/print.min.css?ver=16.34.05.19.08.2024' type='text/css' media='print' />
+<link rel='stylesheet' id='font-awesome-official-css' href='https://pro.fontawesome.com/releases/v5.15.4/css/all.css' type='text/css' media='all' integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous" />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://pro.fontawesome.com/releases/v5.15.4/css/v4-shims.css' type='text/css' media='all' integrity="sha384-sKQhO4q55X7e4nIIO+wnutVfpIITv8+QJG6hE15hThUjV3ssIxUGT4VAoAGYmOU5" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://pro.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script type="text/javascript" src="https://www.rochester.edu/uhs/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js?ver=1" id="swiper-js"></script>
+<link rel="https://api.w.org/" href="https://www.rochester.edu/uhs/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.rochester.edu/uhs/wp-json/wp/v2/pages/82282" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.rochester.edu/uhs/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel='shortlink' href='https://www.rochester.edu/uhs/?p=82282' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.rochester.edu/uhs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rochester.edu%2Fuhs%2Fhealthpromotion%2Fabout%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.rochester.edu/uhs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.rochester.edu%2Fuhs%2Fhealthpromotion%2Fabout%2F&#038;format=xml" />
+<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != "dataLayer" ? "&l=" + l : "";
+			j.async = true;
+			j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, "script", "dataLayer", "GTM-TT7PP8Z");
+	</script>
+	<!-- End Google Tag Manager --><noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style>		<style type="text/css" id="wp-custom-css">
+			.page-id-46 .content-header {display:none !important;}
+.page-id-79042 .breadcrumb {display:none !important;}
+.single__post-meta .date {padding-left:0 !important; text-transform:uppercase !important; letter-spacing:1px;}
+.mission .media-text-module__text-inner {padding-top:1rem !important;}
+
+.mission .media-text-module__media {padding-top:1rem !important;}
+
+.page-id-46 .content-header--has-hero {margin-bottom: 0rem;}
+.contact a:before {content:"\f0e0" !important;}
+.page-id-46 .module--type-interstitial.module--layout_inline {padding-top:1.5rem !important; padding-bottom:1.5rem !important;}
+
+.page-id-46 .module--type-interstitial.module--layout_inline .interstitial-module__content {padding-top:6px}
+
+
+.sidebar_title {display:none}
+
+.post-meta--post-author {display: none !important;}
+
+.r_posts {display:none; }
+
+.page-id-7546 .uhs-icon {margin-top:2rem !important;}
+
+
+/* Latest news and updates page */
+.page-id-21646 .breadcrumb {display: none !important;}
+.page-id-21646 .module--type-query_text.white-cards {background: #ffffff !important;}
+.page-id-21646 .module--type-query_text.white-cards .column-3 .loop-item {background:#f4f4f4 !important;}
+.page-id-21646 .module--type-query_text.white-cards .column-3 .loop-item .loop-item__inner {background:#f4f4f4 !important;}
+
+.page-id-206 .landing-social {padding-bottom:0.5rem !important}
+
+.page-id-15346 .t-content a[class*=button], .t-content button[class*=button] {margin-top:-20px !important;}
+
+.hide-content {display:none;!}		</style>
+		</head>
+
+<body class="page-template-default page page-id-82282 page-child parent-pageid-206 page--has-modules" data-js="body">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+	<div class="l-wrapper" data-js="site-wrap">
+
+		
+<header id="masthead" class="masthead" data-js="masthead">
+
+	<a href="#main" class="a11y-skip-link a11y-visual-hide">
+		Skip to content	</a>
+
+	<div class="masthead__top-row">
+		<div class="grid-container">
+
+	<a class="logo__wrap" href="https://www.rochester.edu" rel="home"
+		title="University of Rochester Homepage">
+		<img class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+			alt="University of Rochester" data-src="https://www.rochester.edu/uhs/wp-content/themes/ur-core/img/theme/branding-assets/ur-logo.svg" decoding="async" /><noscript><img class="logo" src="https://www.rochester.edu/uhs/wp-content/themes/ur-core/img/theme/branding-assets/ur-logo.svg"
+			alt="University of Rochester" data-eio="l" /></noscript>
+	</a>
+
+	<div class="masthead__trigger-wrap">
+		<button data-js="toggle-search-top"
+			class="masthead__trigger masthead__trigger--search masthead__trigger--search-top"
+			aria-label="Open site search"
+			data-label-hidden="Open search modal"
+			data-label-shown="Close search modal" aria-expanded="false" aria-haspopup="dialog"
+			aria-controls="search-modal">
+			<span class="fa fa-search" aria-hidden="true"></span> Search
+		</button>
+	</div>
+
+</div>	</div>
+
+	<div class="masthead__title-row business__line-margin" data-js="title-row">
+		
+<div class="grid-container">
+	<div class="masthead__title h1">
+		<a href="https://www.rochester.edu/uhs">
+			<span>
+				University Health Service			</span>
+		</a>
+	</div>
+
+			<a href="https://www.rochester.edu/provost/">
+			<div class="business__line-wrapper">
+				<span class="business__line">
+					Office of the Provost				</span>
+			</div>
+		</a>
+	
+
+	<button id="toggle-site-nav" data-js="toggle-site-nav" class="masthead__trigger masthead__trigger--site-nav"
+		title="Toggle site navigation"
+		aria-label="Open site navigation"
+		data-label-shown="Close site navigation"
+		data-label-hidden="Open site navigation" aria-expanded="false"
+		aria-controls="site-navigation">
+		<span class="fa fa-bars" aria-hidden="true"></span>
+		Menu
+	</button>
+</div>	</div>
+
+	<div id="site-navigation" data-js="site-navigation" class="masthead__nav-row">
+		<div class="grid-container">
+	<div class="site-nav__wrap" data-js="site-nav__wrap">
+
+		<nav id="nav__primary" class="site-nav nav__primary" data-js="nav-primary"
+	aria-label="Primary">
+
+	<ul class="site-nav__list nav-primary__list mega-menu"><li class="nav-primary__list-item nav-primary__list-item--depth-0 nav-primary__list-item--has-children"><span class="nav-primary__actions"><a href="https://www.rochester.edu/uhs/primary-care/" id="menu-item-446" class="nav-primary__action nav-primary__action--depth-0 nav-primary__action--has-children nav-primary__action--has-button"><span class="nav-primary__text">Primary Care</span></a><button inert class="nav-primary__trigger" data-js="trigger-child-menu" aria-controls="menu-item-child-446" aria-expanded="false" title="Toggle submenu" aria-label="Open submenu for Primary Care" data-label-hidden="Open submenu for Primary Care" data-label-shown="Close submenu for Primary Care"><span class="fa fa-chevron-down" aria-hidden="true"></span></button></span>
+<div id="menu-item-child-446" class="nav-primary__wrap-child nav-primary__wrap-child--depth-0" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-0" aria-label="Submenu for Primary Care">
+<li class='nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__content-callout'><div class="message__content"><p class="message__title h5">Primary Care</p><div class="message__description"><p>Health Service provides confidential, high quality health care services for students and other members of the University community. </p>
+</div><p class="message__cta"><a href="/uhs/primary-care/" class="ghost-button--blue">See services</a></p></div></li>	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-84562" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">PATIENTS</span></p>
+	<div id="menu-item-child-84562" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for PATIENTS">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/mandatory-health-fee/entering-student-health-requirements/" id="menu-item-63886" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Health requirements for students</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/locations-and-hours/" id="menu-item-63876" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Locations and hours</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/appointments/" id="menu-item-63866" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Appointments</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/forms-and-policies/" id="menu-item-64286" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Policies and forms</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/primary-care/" id="menu-item-64436" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Services</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/sexual-and-gender-health-services/" id="menu-item-87042" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Sexual &#038; Gender Health</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-84572" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">CONNECT WITH UHS</span></p>
+	<div id="menu-item-child-84572" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for CONNECT WITH UHS">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/about-us/" id="menu-item-63856" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">About us</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/contact-uhs/" id="menu-item-64336" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Contact University Health Service</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/uhs-feedback/" id="menu-item-64346" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Concerns and praise</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-84582" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">RESOURCES</span></p>
+	<div id="menu-item-child-84582" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for RESOURCES">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/uhsconnect/" id="menu-item-64316" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">UHSConnect</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://pay.instamed.com/UHS" id="menu-item-67232" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Pay your UHS bill</span></a></li>
+	</ul>
+	</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-primary__list-item nav-primary__list-item--depth-0 nav-primary__list-item--has-children"><span class="nav-primary__actions"><a href="http://www.rochester.edu/uhs/primary-care/employee-services/" id="menu-item-74482" class="nav-primary__action nav-primary__action--depth-0 nav-primary__action--has-children nav-primary__action--has-button"><span class="nav-primary__text">Occupational Health</span></a><button inert class="nav-primary__trigger" data-js="trigger-child-menu" aria-controls="menu-item-child-74482" aria-expanded="false" title="Toggle submenu" aria-label="Open submenu for Occupational Health" data-label-hidden="Open submenu for Occupational Health" data-label-shown="Close submenu for Occupational Health"><span class="fa fa-chevron-down" aria-hidden="true"></span></button></span>
+<div id="menu-item-child-74482" class="nav-primary__wrap-child nav-primary__wrap-child--depth-0" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-0" aria-label="Submenu for Occupational Health">
+<li class='nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__content-callout'><div class="message__content"><p class="message__title h5">Occupational Health</p><div class="message__description"><p>The University Health Service works to improve the health and safety of the University community through a variety of occupational health services provided to employees and departments that are non-hospital based. </p>
+</div><p class="message__cta"><a href="/uhs/primary-care/employee-services/" class="ghost-button--blue">Learn more</a></p></div></li>	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-85042" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">RESOURCES</span></p>
+	<div id="menu-item-child-85042" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for RESOURCES">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/services-for-full-time-students/blood-body-fluid-exposures/" id="menu-item-84982" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Blood/Body Fluid Exposures</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/mandatory-health-fee/entering-student-health-requirements/" id="menu-item-84992" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Health Requirements for Entering Students</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/primary-care/forms-and-policies/" id="menu-item-85002" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Policies and forms</span></a></li>
+	</ul>
+	</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-primary__list-item nav-primary__list-item--depth-0 nav-primary__list-item--has-children"><span class="nav-primary__actions"><a href="https://www.rochester.edu/uhs/ucc/" id="menu-item-486" class="nav-primary__action nav-primary__action--depth-0 nav-primary__action--has-children nav-primary__action--has-button"><span class="nav-primary__text">Counseling Center</span></a><button inert class="nav-primary__trigger" data-js="trigger-child-menu" aria-controls="menu-item-child-486" aria-expanded="false" title="Toggle submenu" aria-label="Open submenu for Counseling Center" data-label-hidden="Open submenu for Counseling Center" data-label-shown="Close submenu for Counseling Center"><span class="fa fa-chevron-down" aria-hidden="true"></span></button></span>
+<div id="menu-item-child-486" class="nav-primary__wrap-child nav-primary__wrap-child--depth-0" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-0" aria-label="Submenu for Counseling Center">
+<li class='nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__content-callout'><div class="message__content"><p class="message__title h5">Counseling Center</p><div class="message__description"><p>The Counseling Center provides assessments and treatment plans to members of the University of Rochester community.</p>
+</div><p class="message__cta"><a href="/uhs/ucc/" class="ghost-button--blue">Get started</a></p></div></li>	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><a href="https://www.rochester.edu/uhs/ucc/about-the-counseling-center/" id="menu-item-64676" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">ABOUT US</span></a>
+	<div id="menu-item-child-64676" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for ABOUT US">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/our-staff/" id="menu-item-64786" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Our staff</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/ucc-feedback/" id="menu-item-64856" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Concerns and praise</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><a href="/uhs/ucc/services/" id="menu-item-64796" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">SERVICES</span></a>
+	<div id="menu-item-child-64796" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for SERVICES">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/ucc/crisis-services/" id="menu-item-64706" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Crisis Services</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/ucc/appointments/" id="menu-item-64686" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Appointments</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/referring-a-student-to-ucc/" id="menu-item-64816" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Referring a student</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><a href="/uhs/ucc/resources-for-self-help-friends-or-family/" id="menu-item-64806" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">RESOURCES</span></a>
+	<div id="menu-item-child-64806" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for RESOURCES">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/outreach-special-programs-and-consultation/" id="menu-item-64836" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Outreach, special programs and consultation</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/online-screening-resources/" id="menu-item-64826" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Online screening resources</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/ucc/professional-training-programs/" id="menu-item-64846" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Professional training programs</span></a></li>
+	</ul>
+	</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-primary__list-item nav-primary__list-item--depth-0 nav-primary__list-item--has-children"><span class="nav-primary__actions"><a href="https://www.rochester.edu/uhs/healthpromotion/" id="menu-item-286" class="nav-primary__action nav-primary__action--depth-0 nav-primary__action--has-children nav-primary__action--has-button"><span class="nav-primary__text">Health Promotion Office</span></a><button inert class="nav-primary__trigger" data-js="trigger-child-menu" aria-controls="menu-item-child-286" aria-expanded="false" title="Toggle submenu" aria-label="Open submenu for Health Promotion Office" data-label-hidden="Open submenu for Health Promotion Office" data-label-shown="Close submenu for Health Promotion Office"><span class="fa fa-chevron-down" aria-hidden="true"></span></button></span>
+<div id="menu-item-child-286" class="nav-primary__wrap-child nav-primary__wrap-child--depth-0" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-0" aria-label="Submenu for Health Promotion Office">
+<li class='nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__content-callout'><div class="message__content"><p class="message__title h5">Health Promotion</p><div class="message__description"><p>The UHS Health Promotion Office leads campus-wide health promotion action to advance a culture of well-being, cultivate student flourishing, and positively influence student health. </p>
+</div><p class="message__cta"><a href="/uhs/healthpromotion/" class="ghost-button--blue">Learn more</a></p></div></li>	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children nav-primary__list-item--is-current-parent"><p id="menu-item-65186" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">ABOUT US</span></p>
+	<div id="menu-item-child-65186" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for ABOUT US">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2 nav-primary__list-item--is-current"><a href="https://www.rochester.edu/uhs/healthpromotion/about/" id="menu-item-84442" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Mission &#038; Overview</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/our-people/" id="menu-item-84372" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Our People</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/our-work/" id="menu-item-84382" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Our Work</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/contact/" id="menu-item-84452" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Contact</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-64926" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">STUDENT WELL-BEING</span></p>
+	<div id="menu-item-child-64926" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for STUDENT WELL-BEING">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/focus-areas/" id="menu-item-84432" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Focus Areas</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/eastman-well-being/" id="menu-item-85462" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Eastman Student Well-Being</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/graduate-student-well-being/" id="menu-item-68862" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Graduate Student Well-being</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="/uhs/healthpromotion/request-a-presentation/" id="menu-item-66046" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Request a Presentation</span></a></li>
+	</ul>
+	</div>
+</li>
+	<li class="nav-primary__list-item nav-primary__list-item--depth-1 nav-primary__list-item--has-children"><p id="menu-item-64936" class="nav-primary__action nav-primary__action--depth-1 nav-primary__action--has-children"><span class="nav-primary__text">CAMPUS WELL-BEING</span></p>
+	<div id="menu-item-child-64936" class="nav-primary__wrap-child nav-primary__wrap-child--depth-1" data-js="child-menu">
+
+<ul class="nav-primary__list-child nav-primary__list-child--depth-1" aria-label="Submenu for CAMPUS WELL-BEING">
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/focus-areas/health-equity/" id="menu-item-84392" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Health Equity</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/supportive-environments/" id="menu-item-84402" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Supportive Environments</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/training/" id="menu-item-89542" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Well-Being for Life and Learning</span></a></li>
+		<li class="nav-primary__list-item nav-primary__list-item--depth-2"><a href="https://www.rochester.edu/uhs/healthpromotion/surveys-and-data/" id="menu-item-84422" class="nav-primary__action nav-primary__action--depth-2"><span class="nav-primary__text">Surveys and Data</span></a></li>
+	</ul>
+	</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>	</nav>
+		<nav id="nav__secondary" class="site-nav nav__secondary" data-js="nav-secondary"
+	aria-label="Secondary">
+	<ul class="site-nav__list nav-secondary__list">
+		<li class="information nav-secondary__list-item nav-secondary__list-item--depth-0"><a href="https://www.rochester.edu/uhs/student-resources/" class="nav-secondary__action nav-secondary__action--depth-0"><span>Student Resources</span></a></li>
+<li class="contact nav-secondary__list-item nav-secondary__list-item--depth-0"><a href="https://www.rochester.edu/uhs/primary-care/contact-uhs/" class="nav-secondary__action nav-secondary__action--depth-0"><span>Contact</span></a></li>
+	</ul>
+</nav>
+	</div>
+</div>	</div>
+
+	<div class="search-modal-wrapper" data-js="search-modal-wrapper">
+		<dialog id="search-modal" data-js="search-modal" class="masthead__search" aria-label="Search site"
+			aria-modal="true">
+			<div data-js="search__modal-wrapper" class="search__modal-wrapper grid-container">
+	<div class="search__modal">
+		<button data-js="toggle-search" class="masthead__trigger masthead__trigger--search masthead__trigger--search-modal"
+			aria-label="Close site search">
+			<span class="fa fa-close" aria-hidden="true"></span> Close
+		</button>
+		
+<div class="search__form">
+	<form role="search" aria-label="Search site" method="get" class="search-form" data-js="search-form"
+		action="https://www.rochester.edu/uhs">
+		<div class="search__input-wrap">
+			<label class="search__label" data-js="search-label" for="s-66ccd714b76e4">
+				Search University Health Service			</label>
+			<input type="search" id="s-66ccd714b76e4" data-js="search-query"
+				class="form-control search-form__query" name="s" value=""
+				placeholder="Search University Health Service" autofocus />
+			<button class="search-form__submit" type="submit" aria-label="Submit Search">
+				<span class="button-text">
+					Search				</span>
+			</button>
+		</div>
+		<div class="dynamic_content">
+			<h2 class="widgettitle">Explore areas of University Health Service</h2>
+<div class="menu-search-helpful-links-container"><ul id="menu-search-helpful-links" class="menu"><li class="__list-item __list-item--depth-0"><a href="/uhs/primary-care/" class="__action __action--depth-0">Primary care services</a></li>
+<li class="__list-item __list-item--depth-0"><a href="/uhs/ucc/" class="__action __action--depth-0">Counseling center</a></li>
+<li class="__list-item __list-item--depth-0"><a href="/uhs/healthpromotion/" class="__action __action--depth-0">Health promotion office</a></li>
+</ul></div>		</div>
+	</form>
+</div>	</div>
+</div>		</dialog>
+	</div>
+
+</header>
+<main id="main" class=''>
+
+	<header  class="content-header content-header--page content-header--no-hero content-header--bg-grey  grid-container">
+		<div class="header__wrap">
+
+		<div class="header__content">
+			<div class="header__content-inner">
+				<h1 class="header__title h1"><span>About Us</span></h1>			</div>
+		</div>
+	</div>
+</header>
+	
+		
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x">
+
+			<div class="cell large-12">
+				<nav class="breadcrumb" aria-label="Breadcrumbs"><ul><li><a href="https://www.rochester.edu/uhs/">Home</a></li>  <li><a href="https://www.rochester.edu/uhs/healthpromotion/">Health Promotion Office</a></li>  <li class="breadcrumb_last" aria-current="page">About Us</li></ul></nav>			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+<div class="modules">
+	
+<section  class="module module--type-card_grid module--layout-1 width-large grey" style="background-color: #f4f4f4"
+	>
+	<div class="card-grid-module__container grid-container grey">
+		
+					<header class="desc_section card-grid-module__header">
+									<header class="module__header text-module__header grid-container__stagger-double">
+						<div class="module__title h2"><h2 style="text-align: left;">Mission &amp; Guiding Principles</h2>
+</div>
+					</header>
+				
+									<div class="module_desc card-grid-module__description t-content grid-container__stagger-double">
+						<p style="text-align: left;">The UHS Health Promotion Office leads campus-wide health promotion action to advance a culture of well-being, cultivate student flourishing, and positively influence student health.</p>
+					</div>
+							</header>
+		
+		<div class="card-grid-module__loop">
+											<article  class="image_thumbnail hover_fade image_left white  card-grid-module__card card-item">
+					
+						
+							<div class="card_image">
+								<div role="img" aria-label="Line drawing of the outline of three people" style=""  class="card-item__image lazyload" data-back="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/1-1.png" data-back-webp="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/1-1.png.webp"></div>							</div>
+						
+						<div class="card_content__wrapper ">
+															<div class="card-item__title"><p><strong>Always be Student Centered</strong></p>
+</div>
+																						<div class="card-item__description t-content">
+									<p>Put students at the center of our work, using participatory approaches to engage and amplify their voices.</p>
+<ul>
+<li>Involve students in all steps of our processes, from assessing needs and collecting data to creating, implementing, and evaluating our programs and services.</li>
+<li>Identify student strengths and competencies rather than problems and deficits.</li>
+<li>Consider the whole student, their intersecting identities, and how their cultural filters shape their understanding and quest for health and well-being.</li>
+</ul>
+<p>&nbsp;</p>
+								</div>
+													</div>
+
+										</article>
+											<article  class="image_thumbnail hover_fade image_left white  card-grid-module__card card-item">
+					
+						
+							<div class="card_image">
+								<div role="img" aria-label="Line drawing of a person holding up their arms with stars coming out" style=""  class="card-item__image lazyload" data-back="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/2-1.png" data-back-webp="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/2-1.png.webp"></div>							</div>
+						
+						<div class="card_content__wrapper ">
+															<div class="card-item__title"><p><strong>Pursue Ever Better Well-being</strong></p>
+</div>
+																						<div class="card-item__description t-content">
+									<p>Define Meliora through the lens of student flourishing. <strong></strong></p>
+<ul>
+<li>Help students develop the skills of awareness, mindfulness, resilience, equanimity, acceptance, and self-compassion.</li>
+<li>Emphasize community-oriented and compassion-centered care, rather than assuming students have the individual resources necessary for self-care.</li>
+<li>Create opportunities for students to experience connectedness, belonging, and purpose.</li>
+</ul>
+								</div>
+													</div>
+
+										</article>
+											<article  class="image_thumbnail hover_fade image_left white  card-grid-module__card card-item">
+					
+						
+							<div class="card_image">
+								<div role="img" aria-label="Line drawing of an open book with a lightbulb on top" style=""  class="card-item__image lazyload" data-back="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/4-1.png" data-back-webp="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/4-1.png.webp"></div>							</div>
+						
+						<div class="card_content__wrapper ">
+															<div class="card-item__title"><p><strong>Prioritize Evidence-Informed Interventions</strong></p>
+</div>
+																						<div class="card-item__description t-content">
+									<p>Prioritize evidence-informed interventions, utilizing UR specific and national data, published research, and best practices.</p>
+<ul>
+<li>Take part in ongoing data collection through quantitative and qualitative measures to best understand the needs of our students.</li>
+<li>Disaggregate data sets whenever possible to recognize the various socio-ecological factors which impact access and outcome for individuals with marginalized identities.</li>
+<li>Engage in continuing exploration of current research and best practices.</li>
+</ul>
+								</div>
+													</div>
+
+										</article>
+											<article  class="image_thumbnail hover_fade image_left white  card-grid-module__card card-item">
+					
+						
+							<div class="card_image">
+								<div role="img" aria-label="Line drawing of five fists coming together to surround a heart" style=""  class="card-item__image lazyload" data-back="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/3-1.png" data-back-webp="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/3-1.png.webp"></div>							</div>
+						
+						<div class="card_content__wrapper ">
+															<div class="card-item__title"><p><strong>Use Collective Engagement</strong></p>
+</div>
+																						<div class="card-item__description t-content">
+									<p>Be collaborative, with the understanding that this work is far greater than our individual reach.</p>
+<ul>
+<li>Recognize that cultivating a culture of well-being will be most successful with intentional collaboration.</li>
+<li>Continually develop and foster cross-sector partnerships with campus colleagues, key stakeholders, and community organizations.</li>
+<li>Partner with others to jointly plan, coordinate efforts, share information and lessons learned, create a shared vision, and identify new and innovative ways to embed well-being into university systems and settings.</li>
+</ul>
+								</div>
+													</div>
+
+										</article>
+											<article  class="image_thumbnail hover_fade image_left grey  card-grid-module__card card-item">
+					
+						
+							<div class="card_image">
+								<div role="img" aria-label="Line drawing of a brain" style=""  class="card-item__image lazyload" data-back="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/Missions-Goals-Icons.png" data-back-webp="https://www.rochester.edu/uhs/wp-content/uploads/2023/01/Missions-Goals-Icons.png.webp"></div>							</div>
+						
+						<div class="card_content__wrapper ">
+															<div class="card-item__title"><p><b>Think Wholistically</b></p>
+</div>
+																						<div class="card-item__description t-content">
+									<p>Use settings and whole-system approaches to embed well-being into campus culture.</p>
+<ul>
+<li>Investigate how various settings (classrooms, residence halls, student spaces) and systems (policies, social norms, allocation of resources) either help or hinder student flourishing.</li>
+<li>Move beyond individual level interventions to achieve population and systems level change.</li>
+<li>Commit to a comprehensive, inclusive, and progressive wellness model of college health promotion.</li>
+</ul>
+								</div>
+													</div>
+
+										</article>
+					</div>
+	</div>
+</section>
+<section  class="module module--type-text  width-large navy" 	style="background-color: #00205b;">
+		<div class="text-module__container grid-container navy">
+
+		<header class="text-module__header grid-container__stagger-double t-content"><div class="module__title h2"><h2>Our Commitment to Diversity, Equity, and Inclusion</h2>
+</div></header>
+		
+		
+		
+	</div>
+</section>
+<section  class="module module--type-text  width-large grey" 	style="background-color: #f4f4f4;">
+		<div class="text-module__container grid-container grey">
+
+		
+		<div class="text-module__inner"><div class="text-module__content"><div class="t-content grid-container__stagger-double"><p>The UHS Health Promotion Office is committed to fostering a culture which values diversity, equity, and inclusion. We strive to cultivate sustainable and impactful health promotion and well-being action that can be embedded into our campus community. Our work values the uniqueness of each students ethnic/indigenous/racial identity, nationality and citizenship, religious beliefs, sexual orientation, gender and gender expression, age, ability, body shape / size, and socio-economic status, veteran status, as well as the intersectionality of these social identities. Furthermore, we acknowledge that possessing these identities within environments where those identities are not fully appreciated, respected, or are actively undermined may have a significant impact on a students well-being and capacity to thrive.</p>
+<p>We understand that we cannot effectively cultivate impactful health promotion without also recognizing the socio-ecological factors which impact access and outcome for individuals with marginalized identities. We play a critical role in addressing systemic and structural issues that perpetuate inequities on campus and prevent students from achieving optimal well-being. Our health promotion efforts center around a community development approach that is strengths-based and student-centered, so that our programs, services, and initiatives best meet the needs of our diverse student body. We commit to lifting up the voices of students with historically marginalized identities and engaging in shared decision-making practices within our office. We collaborate with students, colleagues, and outside organizations with expertise that we lack, and remain humble through recognition that we are a resource, rather than the key to solving issues of student well-being.</p>
+<p>We are committed to always serving students to the best of our ability. We acknowledge that this important work is a continual cycle of learning and action, of recognizing and dismantling our biases, and of identifying needs and closing gaps. We promise to be relentless in our critical self-reflection, and will gracefully acknowledge when mistakes are made, recognizing that intent does not equal impact. This commitment is ongoing. We promise to maintain a consistent focus on the interdependence between diversity, equity, and inclusion issues which are necessary to achieve a campus culture of well-being for all students.</p>
+</div></div>
+		
+		</div>
+	</div>
+</section>
+<section  class="module module--type-text  width-large navy" 	style="background-color: #00205b;">
+		<div class="text-module__container grid-container navy">
+
+		<header class="text-module__header grid-container__stagger-double t-content"><div class="module__title h2"><h2>Land Acknowledgement</h2>
+</div></header>
+		
+		
+		
+	</div>
+</section>
+<section  class="module module--type-text  width-large grey" 	style="background-color: #f4f4f4;">
+		<div class="text-module__container grid-container grey">
+
+		
+		<div class="text-module__inner"><div class="text-module__content"><div class="t-content grid-container__stagger-double"><p>We begin by recognizing that the University of Rochester is located on the ancestral and unceded territory of the Onndowaga (pronounced: Oh-nown-dough-wahgah) or the people of the Great Hill. In English, they are known as Seneca people. The Onndowaga People are members of the Haudenosaunee (ho-dee-no-SHO-nee) Confederacy, which consist of the Mohawk, Oneida, Onondaga, Cayuga, Seneca, and Tuscarora nations.</p>
+<p>We honor and pay our respects to elders both past and present who have stewarded this land throughout the generations, and whose practices and spiritualities are tied to this land. Please take a moment to consider the many legacies of violence, displacement, migration, and genocide that have occurred on this land.</p>
+<hr />
+<p>Land acknowledgement alone is not enough. It is a starting point that blossoms when partnered with reflection, intentional action, and collaborative relationship building. We recognize that academia has a long history of harming Indigenous communities, and although we are one small office within a large academic institution, we commit to taking action, both personally and professionally, in the following ways:</p>
+<ul>
+<li>Offering land acknowledgements thoughtfully and intentionally at events and presentations we host.</li>
+<li>Acknowledge Indigenous Peoples Day on our social media platforms.</li>
+<li>Celebrate Indigenous Peoples Day by sharing community events with Health Promotion staff and encouraging them to attend.</li>
+<li>Encourage staff to use the #HonorNativeLand virtual backgrounds on <a href="https://drive.google.com/drive/folders/1-HHS-ci0mpHajvC50-sSsxBEHe7bYC_m">Zoom</a>.</li>
+<li>Post signs within the Health Promotion office area acknowledging the native lands on which our building resides.</li>
+<li>Continue to understand and address the unique health and well-being needs of our Indigenous students.</li>
+<li>Advocate for University land acknowledgement resources, continuing education, and policy development.</li>
+<li>Continue to learn and discover deeper possibilities for decolonizing relationships with people and place.</li>
+</ul>
+<p>Content for this land acknowledgement was developed with gratitude to the following resources: <a href="https://usdac.us/nativeland">US Department of Arts and Agriculture</a> and <a href="https://nativegov.org/">Native Governance Center</a>.</p>
+</div></div>
+		
+		</div>
+	</div>
+</section></div>
+
+	
+</main>
+
+
+
+<footer class="site-footer">
+	<a class="skip-link-top" href="#masthead" data-js="skip-link-top">
+	<span class="screen-reader-text" aria-label="Return to the top of the page">
+		Return to the top of the page	</span>
+</a>
+	
+	<div class="strategicPlanWrapper">
+	<div class="strategicPlan grid-container">
+		<div class="strategicPlanTitle">
+			<span class="strategicPlanTitle-1">Boundless</span>
+			<span class="strategicPlanTitle-2"> Possibility</span>
+			<div class="dashedCurveWrapper">
+				<svg class="dashedCurveWide" xmlns="http://www.w3.org/2000/svg" width="706" height="115" viewBox="0 0 706 115"
+					fill="none">
+					<path d="M2.01538 2C100.102 71.7479 221.529 113 353 113C484.471 113 605.898 71.7478 703.985 2"
+						stroke="#FFC70A" stroke-width="3" stroke-dasharray="15 13" />
+				</svg>
+				<svg class="dashedCurveNormal" xmlns="http://www.w3.org/2000/svg" width="550" height="117" viewBox="0 0 550 117"
+					fill="none">
+					<path
+						d="M-51.1062 58.1506C30.5248 101.649 139.408 123.046 256.384 112.07C373.361 101.094 476.363 59.8156 548.478 1.89161"
+						stroke="#FFC70A" stroke-width="3" stroke-dasharray="15 13" />
+				</svg>
+				<svg class="dashedCurveMobile" xmlns="http://www.w3.org/2000/svg" width="700" height="62" viewBox="0 0 375 62"
+					fill="none">
+					<path d="M-41 2C17.592 37.8473 98.3412 60 187.5 60C276.659 60 357.408 37.8473 416 2" stroke="#FFC70A"
+						stroke-width="3" stroke-dasharray="15 13" />
+				</svg>
+			</div>
+		</div>
+
+		<div class="strategicPlanExplore">
+			<a href="https://boundless.rochester.edu/" class="strategicPlanLink">
+				<p>Explore our 2030 Strategic Plan</p>
+			</a>
+		</div>
+	</div>
+</div>
+	<div class="site-footer__inner grid-container">
+
+		<div class="site-footer__block site-footer__block--contact">
+
+			<a class="logo__wrap logo__wrap--footer" href="https://www.rochester.edu" rel="home"
+				title="University of Rochester Homepage">
+				<img class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					alt="University of Rochester" data-src="https://www.rochester.edu/uhs/wp-content/themes/ur-core/img/theme/branding-assets/ur-logo-white.svg" decoding="async" /><noscript><img class="logo" src="https://www.rochester.edu/uhs/wp-content/themes/ur-core/img/theme/branding-assets/ur-logo-white.svg"
+					alt="University of Rochester" data-eio="l" /></noscript>
+			</a>
+
+			<div class="contact-info">
+				<a href="https://www.rochester.edu/maps/" class="contact-info__link contact-info__link--map">
+					<i class="fa fa-map-marker-alt"></i>
+					<div class="information">
+						<span class="contact-info__link-label">
+							See maps and directions						</span>
+						<span class="contact-info__details">
+							Rochester, NY 14627						</span>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="site-footer__block site-footer__block--nav">
+
+			<div class="site-footer__search-wrap">
+				
+<div class="search__form">
+	<form method="get" class="search-form" data-js="search-form" action="https://www.rochester.edu/search/index.php">
+		<label class="search__label" for="s-66ccd714bcac2">
+			Search rochester.edu		</label>
+		<div class="search__input-wrap">
+			<input type="text" id="s-66ccd714bcac2" class="search__input" name="q" data-js="search-query"
+				placeholder="Search rochester.edu" />
+			<button aria-label="Submit Search" class="search-form__submit" type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</div>
+	</form>
+</div>			</div>
+
+			<div class="site-footer__nav-wrap">
+				<nav class="site-footer__nav" aria-label="Footer">
+					<ol>
+						<li class="site-footer__nav-item">
+							<a href="https://www.rochester.edu/accessibility.html">
+								Accessibility							</a>
+						</li>
+						<li class="site-footer__nav-item">
+							<a href="https://www.rochester.edu/eoc/nondiscrimination-statement/">
+								Nondiscrimination							</a>
+						</li>
+						<li class="site-footer__nav-item">
+							<a href="https://www.rochester.edu/copyright.html">
+								Copyright							</a>
+						</li>
+						<li class="site-footer__nav-item">
+							<a href="https://www.rochester.edu/emergency/">
+								Emergency Information							</a>
+						</li>
+						<li class="site-footer__nav-item">
+							<a href="https://www.rochester.edu/aboutus/mission.html">
+								Vision &amp; Values							</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="copyright">
+		&copy; University of Rochester 1996-2024	</div>
+
+</footer>
+</div><!-- .l-wrapper -->
+
+<!-- Google Tag Manager (noscript) -->
+	<noscript
+		><iframe
+			src="https://www.googletagmanager.com/ns.html?id=GTM-TT7PP8Z"
+			height="0"
+			width="0"
+			style="display: none; visibility: hidden"
+		></iframe
+	></noscript>
+	<!-- End Google Tag Manager (noscript) --><script type="text/javascript" id="eio-lazy-load-js-before">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.rochester.edu/uhs/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=780" id="eio-lazy-load-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.rochester.edu/uhs/wp-content/themes/ur-core/js/dist/scripts.min.js?ver=16.34.05.19.08.2024" id="core-theme-scripts-js"></script>
+
+</body>
+
+</html>

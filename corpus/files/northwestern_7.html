@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright 2012-2021 ForgeRock AS. All Rights Reserved
+  ~
+  ~ Use of this code requires a commercial software license with ForgeRock AS.
+  ~ or with one of its affiliates. All use shall be exclusively subject
+  ~ to such license between the licensee and ForgeRock AS.
+  -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Northwestern SSO</title>
+    </head>
+    <!--[if IE 9]>
+    <body style="display:none" class="ie9">
+    <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <body style="display:none">
+    <!--<![endif]-->
+        <div id="messages" class="clearfix"></div>
+        <div id="wrapper">Loading...</div>
+        <div id="loginHelp">
+          <div class="container-fluid">
+            <div class="row">
+                <ul>
+                    <li id="help"><a href="https://services.northwestern.edu/TDClient/30/Portal/KB/ArticleDet?ID=1410" target="_blank">Help with login
+                            problems</a></li>
+                    <li id="help"><a href="https://northwesternuniversity.statuspage.io/" target="_blank">Status of
+                            Northwestern IT Services</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <footer id="footer" class="footer text-muted"></footer>
+        <div id="dialog"></div>
+    <script type="text/javascript" src="main.de08136cf7.js"></script></body>
+    <script type="text/javascript">
+        var refresh_rate = 300; //<-- In seconds, change to your needs
+        var count_down = 0;
+        var login_hash = window.location.hash; // The login page has the property "hash" with a value of "#login/" 
+
+        // Count Down that executes every second
+        setInterval(function () {
+            count_down++;
+            refreshCheck();
+        }, 1000);
+
+        // Checks if the user should be redirected 
+        // Ignores Forgerock Admin with the login_hash check
+        function refreshCheck() {
+            var focus = window.onfocus;
+            if (
+                (count_down >= refresh_rate && document.readyState == "complete" && (login_hash == "#login/" ||
+                    login_hash == "#login"))
+            ) {
+                location.replace("https://idsprod.ci.northwestern.edu/public/sso-info.html");
+            }
+        }
+    </script>
+</html>
