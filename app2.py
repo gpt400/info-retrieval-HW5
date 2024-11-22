@@ -51,16 +51,18 @@ def main():
                 doc_path = f"corpus/files/{doc_name}"
                 st.markdown(
                     f"""
-                    **{i}:** 
-                    **Document:** [**{doc_name}**]({doc_path})  
-                    **Score:** {score:.4f}  
-                    **Matching Terms:** {', '.join(terms)}
-                    """
+                    <p>
+                    <b>{i}:</b><br>
+                    <b>Document:</b> 
+                    <a href="{doc_path}" target="_blank">{doc_name}</a><br>
+                    <b>Score:</b> {score:.4f}<br>
+                    <b>Matching Terms:</b> {', '.join(terms)}
+                    </p>
+                    """,
+                    unsafe_allow_html=True,
                 )
         else:
             st.warning("No matching documents found.")
-
-
 
 
 if __name__ == "__main__":
