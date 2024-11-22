@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu/torch_stable.html
+
 altair==5.4.1
 annotated-types==0.7.0
 anyio==4.6.0
